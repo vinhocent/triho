@@ -14,8 +14,26 @@ export const darkTheme = {
 }
 
 export const GlobalStyles = createGlobalStyle`
+
+* {
+    @import url('../../font.css');
+    font-family:  !important;
+    // CSS you want global. 
+}
     body{
         background : ${({ theme }) => theme.body};
+        color: ${({ theme }) => theme.text};
+        transition: all 0.5s linear;
+    }
+    div{
+        background : ${({ theme }) => theme.body};
+        color: ${({ theme }) => theme.text};
+        transition: all 0.5s linear;
+    }
+
+
+    li{
+        background : ${({ theme }) => theme.background};
         color: ${({ theme }) => theme.text};
         transition: all 0.5s linear;
     }
