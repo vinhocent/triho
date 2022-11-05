@@ -1,6 +1,8 @@
 
 import { useState, useEffect } from 'react'
 import Header from './header'
+import Footer from './footer'
+
 import styles from '../styles/Home.module.css'
 
 
@@ -11,11 +13,8 @@ const Page = () => {
   return (     
     <div>
         <Header/>
-
-
-
-
-      <footer className={styles.footer}></footer>
+        <Footer/>
+      {/* <footer className={styles.footer}></footer> */}
     </div>         
         
   )

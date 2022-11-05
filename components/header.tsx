@@ -16,7 +16,7 @@ function NavItem({  href, text }) {
     <NextLink
       href={href}
       className={
-        'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
+        'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-amber-100 dark:hover:bg-gray-800 transition-all'
     }
     >
       <span className="capsize">{text}</span>
