@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Page from '../components/page'
-import {useState, useEffect, use} from 'react'
+import {useState, useEffect} from 'react'
 
 
 export default function Home() {

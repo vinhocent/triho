@@ -24,26 +24,39 @@ function NavItem({  href, text }: {href: string, text:string}) {
   );
 }
 
+
+
 const Header = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
+  const [fading, setFading] = useState(false);
+
+  useEffect( () =>{
+    setTimeout(() => {
+      setFading(true);
+
+    }, 0)
+  
+    
+  }, []);
+
   // useEffect only runs on the client, so now we can safely show the UI
 
   return (              
-        <div className="flex flex-col justify-center px-8">
-        <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 ">
-        <div className="ml-[-0.60rem]">
-            <NavItem href="/" text = "about"/>
-            <NavItem href="/blog" text = "blog"/>
-            <NavItem href="/" text = "code"/>
-            <NavItem href="/" text = "photo"/>
-            <NavItem href="/" text = "anime"/>
+        <div className= {'flex flex-col justify-center px-8 delay-1000 duration-700 ' + (fading ? 'opacity-100 ease-in ' : 'opacity-0 ease-in ' )}>
+          <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 ">
+            <div className="ml-[-0.60rem]">
+                <NavItem href="/" text = "about"/>
+                <NavItem href="/blog" text = "blog"/>
+                <NavItem href="/" text = "code"/>
+                <NavItem href="/" text = "photo"/>
+                <NavItem href="/" text = "anime"/>
 
-        </div>
-        <ThemeSwitch/>
+            </div>
+            <ThemeSwitch/>
 
-        </nav>
+          </nav>
         </div>
   )
 }
