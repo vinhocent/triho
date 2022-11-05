@@ -44,7 +44,8 @@ student/developer/learner
 bing bongbongbongbongbongbongbongbongbongbongbongbongb
               </p>
             </div>
-              <Image
+                <div className={'duration-700  delay-300 ' + (fading ? 'opacity-100 ease-in ' : 'opacity-0 ease-in ' )}>
+                <Image
                 alt="Tri Ho"
                 height={176}
                 width={176}
@@ -52,6 +53,7 @@ bing bongbongbongbongbongbongbongbongbongbongbongbongb
                 sizes="50vw"
                 priority
               />
+                </div>
           </div>
           </div>
   </Page>
