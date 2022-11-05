@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import NextLink from 'next/link';
 
 
-function NavItem({  href, text }) {
+function NavItem({  href, text }: {href: string, text:string}) {
   const router = useRouter();
   const isActive = router.asPath === href;
 

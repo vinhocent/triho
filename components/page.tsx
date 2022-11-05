@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 
 
 
-export default function  Page(props){
+export default function  Page(props: any){
   const { children, ...customMeta } = props;
 
   return (     
