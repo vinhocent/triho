@@ -12,6 +12,10 @@ module.exports = {
 
       borderWidth: {
         '1px': '1px',
+      },
+
+      transitionDelay: {
+        '600': '600ms',
       }
         
     },

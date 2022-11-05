@@ -18,7 +18,7 @@ const Footer = () => {
   
 
     const [fading, setFading] = useState(' opacity-0 ease-in ');
-    const [faded, setFaded] = useState('  delay-1000 duration-700 ')
+    const [faded, setFaded] = useState('  delay-700 duration-500 ')
   
     useEffect( () =>{
       setFading(' opacity-100  ease-in')
