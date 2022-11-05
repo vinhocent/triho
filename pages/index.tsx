@@ -14,8 +14,9 @@ export default function Home() {
       </Head>
 
 
-      <Page/>
-
+  <Page>
+    //TODO: Add about me section
+  </Page>
     </div>
   )
 }

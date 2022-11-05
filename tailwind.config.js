@@ -8,7 +8,13 @@ module.exports = {
   darkMode: 'class',
 
   theme: {
-    extend: {},
+    extend: {
+
+      borderWidth: {
+        '1px': '1px',
+      }
+        
+    },
   },
   plugins: [],
 }

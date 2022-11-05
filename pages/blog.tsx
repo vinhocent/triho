@@ -6,7 +6,9 @@ import Page from '../components/page'
 export default function Blog() {
   return (
     <div>
-      <Page/>
+      <Page>
+      // TODO: add blog divs
+        </Page>
     </div>
 
   )
