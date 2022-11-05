@@ -15,7 +15,7 @@ export default function Home() {
 
 
   <Page>
-    //TODO: Add about me section
+    {/* //TODO: Add about me section */}
   </Page>
     </div>
   )

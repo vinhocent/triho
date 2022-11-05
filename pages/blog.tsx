@@ -7,7 +7,7 @@ export default function Blog() {
   return (
     <div>
       <Page>
-      // TODO: add blog divs
+      {/* /* TODO: add blog divs */ */}
         </Page>
     </div>
 
