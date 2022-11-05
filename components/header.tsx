@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect , useRef} from 'react'
 import { useTheme } from 'next-themes'
 import ThemeSwitch from './themeSwitch'
 import Link from 'next/link'
@@ -26,17 +26,24 @@ function NavItem({  href, text }: {href: string, text:string}) {
 
 
 
+
 const Header = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
-  const [fading, setFading] = useState(false);
+  const [fading, setFading] = useState(' opacity-0 ease-in ');
+  const [faded, setFaded] = useState('  delay-1000 duration-700 ')
 
   useEffect( () =>{
+    setFading(' opacity-100  ease-in')
     setTimeout(() => {
-      setFading(true);
+       setFaded(' ') 
 
-    }, 0)
+
+    }, 1100)
+    // setFading(true);
+
+
   
     
   }, []);
@@ -44,7 +51,8 @@ const Header = () => {
   // useEffect only runs on the client, so now we can safely show the UI
 
   return (              
-        <div className= {'flex flex-col justify-center px-8 delay-1000 duration-700 ' + (fading ? 'opacity-100 ease-in ' : 'opacity-0 ease-in ' )}>
+    <div className= {'flex flex-col justify-center px-8 ' + (faded) + (fading) }>
+        {/* // <div className= {'flex flex-col justify-center px-8 ' + (faded)+ (fading ? 'opacity-100 ease-in ' : 'opacity-0 ease-in ' )}> */}
           <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 ">
             <div className="ml-[-0.60rem]">
                 <NavItem href="/" text = "about"/>

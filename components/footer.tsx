@@ -15,20 +15,28 @@ const Footer = () => {
 
 
   
-    const [fading, setFading] = useState(false);
+  
+
+    const [fading, setFading] = useState(' opacity-0 ease-in ');
+    const [faded, setFaded] = useState('  delay-1000 duration-700 ')
   
     useEffect( () =>{
+      setFading(' opacity-100  ease-in')
       setTimeout(() => {
-        setFading(true);
+         setFaded(' ') 
   
-      }, 0)
+  
+      }, 1100)
+      // setFading(true);
+  
+  
     
       
     }, []);
   // useEffect only runs on the client, so now we can safely show the UI
 
   return (              
-    <footer className= {'flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8  delay-1000 duration-700 ' + (fading ? 'opacity-100 ease-in ' : 'opacity-0 ease-in ' )}>
+    <footer className= {'flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8 ' + (faded) + (fading)}>
 
     <div className="max-w-2xl mx-auto w-full  justify-center h-5 border-b-1px border-black dark:border-white text-2xl text-center ">
         <span className="bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5">✵ ✵ ✵</span>
