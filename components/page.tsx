@@ -12,10 +12,8 @@ export default function  Page(props: any){
 
   return (     
     <div>
-        <Header/>
         {children}
 
-        <Footer/>
       {/* <footer className={styles.footer}></footer> */}
     </div>         
         

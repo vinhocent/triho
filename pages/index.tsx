@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useTheme } from 'next-themes'
 import styles from '../styles/Home.module.css'
 import Page from '../components/page'
 import {useState, useEffect} from 'react'
@@ -21,6 +22,21 @@ export default function Home() {
     // setFading(true);
     
   }, []);
+
+  const { resolvedTheme } = useTheme()
+  let src
+
+  switch (resolvedTheme) {
+    case 'dark':
+      src = '/mikuinvert.png'
+      break
+    case 'light':
+      src = '/mikupinkpfp.jpg'
+      break
+    default:
+      src = '/mikupinkpfp.jpg'
+      break
+  }
 
   return (
     <div className={styles.container}>
@@ -53,7 +69,7 @@ bing bongbongbongbongbongbongbongbongbongbongbongbongb
                 alt="Tri Ho"
                 height={176}
                 width={176}
-                src="/mikupinkpfp.jpg"
+                src={src}
                 sizes="50vw"
                 priority
               />
