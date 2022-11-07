@@ -27,12 +27,7 @@ export default function Home() {
   let src
 
   switch (resolvedTheme) {
-    case 'dark':
-      src = '/mikuinvert.png'
-      break
-    case 'light':
-      src = '/mikupinkpfp.jpg'
-      break
+
     default:
       src = '/mikupinkpfp.jpg'
       break
