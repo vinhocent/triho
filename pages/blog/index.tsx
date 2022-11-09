@@ -1,52 +1,50 @@
-import React from 'react'
-import Head from 'next/head'
-import Link from "next/link"
-import { getAllArticles } from '../../lib/mdx'
-import dayjs from 'dayjs'
+import type { NextPage, GetStaticProps } from 'next'
+import { IPost } from "../../types/post";
+import Link from 'next/link'
+import { getAllPosts } from "../../lib/mdx";
 
-export default function BlogPage({ posts }) {
+// props type
+type Props = {
+  posts: [IPost]
+}
+
+// component render function
+const Home: NextPage<Props> = ({ posts }: Props) => {
   return (
-    <React.Fragment>
-      <Head>
-        <title>My Blog</title>
-      </Head>
-      <div>
-        {posts.map((frontMatter) => {
-          return (
-            <Link href={`/blog/${frontMatter.slug}`} passHref>
-              <div>
-                <h1 className="title">{frontMatter.title}</h1>
-                <p className="summary">{frontMatter.excerpt}</p>
-                <p className="date">
-                  {dayjs(frontMatter.publishedAt).format('MMMM D, YYYY')} &mdash;{' '}
-                  {frontMatter.readingTime}
-                </p>
-              </div>
-            </Link>
-          )
-        })}
+    <div>
+      <h1 className="text-4xl font-bold mb-4">Blog</h1>
+
+      <div className="space-y-12">
+        {posts.map((post) => (
+          <div key={post.slug}>
+
+
+            <h2 className="text-2xl font-bold mb-4">
+              <Link href={`/blog/${post.slug}`}>
+                {post.title}
+              </Link>
+            </h2>
+
+            <p>{post.description}</p>
+          </div>
+        ))}
       </div>
-    </React.Fragment>
+    </div>
   )
 }
 
+export default Home
 
+// get posts from serverside at build time
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = getAllPosts([
+    'title',
+    'slug',
+    'date',
+    'description',
+    'thumbnail'
+  ]);
 
-export async function getStaticProps() {
-  const articles = await getAllArticles()
-
-  articles
-    .map((article) => article.data)
-    .sort((a, b) => {
-      if (a.data.publishedAt > b.data.publishedAt) return 1
-      if (a.data.publishedAt < b.data.publishedAt) return -1
-
-      return 0
-    })
-
-  return {
-    props: {
-      posts: articles.reverse(),
-    },
-  }
+  // retunr the posts props
+  return { props: { posts } }
 }

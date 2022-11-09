@@ -51,15 +51,15 @@ export default function Home() {
               <h1 className={'font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-700 ' + (fading )}>
                 tr1e_
               </h1>
-              <h2 className={'text-gray-700 dark:text-gray-200 mb-4 mt-2 transition-opacity duration-700  delay-300 ' + (fading)}>
+              <h2 className={'text-gray-700 dark:text-gray-200 mb-4 mt-2 transition-opacity duration-700  delay-500 ' + (fading)}>
 
 student/developer/learner
               </h2>
-              <p className={'text-gray-600 dark:text-gray-400 mb-16 break-all duration-700  delay-600 ' + (fading)}>
+              <p className={'text-gray-600 dark:text-gray-400 mb-16 break-all duration-700  delay-700 ' + (fading)}>
 bing bongbongbongbongbongbongbongbongbongbongbongbongb
               </p>
             </div>
-                <div className={'duration-700  delay-300 ' + (fading  )}>
+                <div className={'duration-700  delay-600 ' + (fading  )}>
                 <Image
                 alt="Tri Ho"
                 height={176}
