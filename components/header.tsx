@@ -40,7 +40,7 @@ const tabsData = [
   },
   {
     label: 'other',
-    href: '/other',
+    href: '/',
     left: 115,
     width: 60,
 
