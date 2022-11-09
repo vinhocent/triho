@@ -36,13 +36,13 @@ const Footer = () => {
   // useEffect only runs on the client, so now we can safely show the UI
 
   return (              
-    <footer className= {'flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8 ' + (faded) + (fading)}>
+    <footer className= {'flex flex-col justify-center px-8 ' + (faded) + (fading)}>
 
     <div className="max-w-2xl mx-auto w-full  justify-center h-5 border-b-1px border-black dark:border-white text-2xl text-center ">
         <span className="bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5">✵ ✵ ✵</span>
     </div>
 
-    <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 pt-8 sm:grid-cols-3">
+    <div className="max-w-2xl mx-auto w-full  grid grid-cols-1 gap-4 pb-16 pt-8 sm:grid-cols-3 ">
       <div className="flex flex-col space-y-4">
         <Link
           href="/"
