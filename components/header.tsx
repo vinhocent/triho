@@ -40,7 +40,7 @@ const tabsData = [
   },
   {
     label: 'other',
-    href: '/',
+    href: '/other',
     left: 115,
     width: 60,
 
@@ -106,13 +106,13 @@ const Header = () => {
                       href={tab.href}
                       key={idx}
                       className={
-                        'hidden md:inline-block p-1 sm:px-3 sm:py-2 z-20 rounded-lg  transition-all'}
+                        'hidden md:inline-block p-1 sm:px-3 sm:py-2 z-20 rounded-lg  transition-all text-gray-600 dark:hover:text-white hover:text-black ease-in-out'}
                         // hover:bg-amber-100 dark:hover:bg-gray-800
                          onMouseEnter={() => setTabPosition(idx)}
                          onMouseLeave={() => setTabPosition2(idx)}
 
                         >
-                      <span className="capsize">{tab.label}</span>
+                      {tab.label}
                     </NextLink>
                     )
                 })}
