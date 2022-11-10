@@ -77,7 +77,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col  gap-y-8">
               <div className="   items-center flex-col">
-              <div className="flex flex-row justify-items-start items-center mb-4">
+                <div className="flex flex-row justify-items-start items-center mb-4">
                   <Image
                     alt="Tri Ho"
                     height={40}
@@ -150,7 +150,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-row justify-items-start items-center mb-4">
-                <Image
+                  <Image
                     alt="Tri Ho"
                     height={40}
                     width={40}
@@ -163,7 +163,7 @@ export default function Home() {
                       University of Waterloo
                     </div>
                     <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
-                      Computer Science , Bachelors
+                      Computer Science + C&O , Bachelors
                     </span>
                   </div>
                   <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
