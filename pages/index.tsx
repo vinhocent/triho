@@ -78,14 +78,14 @@ export default function Home() {
             <div className="flex flex-col  gap-y-8">
               <div className="   items-center flex-col">
               <div className="flex flex-row self-center items-center mb-4">
-                  {/* <Image
+                  <Image
                     alt="Tri Ho"
                     height={40}
                     width={40}
-                    src="/huawei.svg"
+                    src="/1password.png"
                     priority
-                    className={'mr-4 p-2 bg-red-300/50 rounded-lg'}
-                  /> */}
+                    className={'mr-4 p-2 rounded-lg'}
+                  />
                   <div className="w-fit">
                     <div className="dark:text-white text-gray-800 ">
                       1Password
@@ -94,7 +94,7 @@ export default function Home() {
                       Software Developer Intern
                     </span>
                   </div>
-                  <span className="w-full border-t border-gray-300 mx-4 border-dashed shrink dark:border-gray-800"></span>
+                  <span className="w-full border-t dark:border-gray-300 mx-4 border-dashed shrink border-gray-400"></span>
 
                   <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
                     Fall 2022
@@ -102,14 +102,14 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-row self-center items-center mb-4">
-                  {/* <Image
+                  <Image
                     alt="Tri Ho"
                     height={40}
                     width={40}
                     src="/huawei.svg"
                     priority
-                    className={'mr-4 p-2 bg-red-300/50 rounded-lg'}
-                  /> */}
+                    className={'mr-4 p-2 rounded-lg'}
+                  />
                   <div className="">
                     <div className="dark:text-white text-gray-800 ">
                       Huawei
@@ -118,7 +118,7 @@ export default function Home() {
                       Software Engineering Intern
                     </span>
                   </div>
-                  <span className="w-full border-t border-gray-300 mx-4 border-dashed shrink dark:border-gray-800"></span>
+                  <span className="w-full border-t dark:border-gray-300 mx-4 border-dashed shrink border-gray-400"></span>
 
                   <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
                     Winter 2022
@@ -128,14 +128,14 @@ export default function Home() {
 
 
                 <div className="flex flex-row self-center items-center mb-4">
-                  {/* <Image
+                  <Image
                     alt="Tri Ho"
                     height={40}
                     width={40}
-                    src="/huawei.svg"
+                    src="/1password.png"
                     priority
-                    className={'mr-4 p-2 bg-red-300/50 rounded-lg'}
-                  /> */}
+                    className={'mr-4 p-2 rounded-lg'}
+                  />
                   <div className="w-5/12">
                     <div className="dark:text-white text-gray-800 ">
                       1Password
@@ -144,7 +144,7 @@ export default function Home() {
                       Software Developer Intern
                     </span>
                   </div>
-                  <span className="w-full border-t border-gray-300 mx-4 border-dashed shrink dark:border-gray-800"></span>
+                  <span className="w-full border-t dark:border-gray-300 mx-4 border-dashed shrink border-gray-400"></span>
 
                   <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
                     Summer 2021
