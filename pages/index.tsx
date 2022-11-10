@@ -70,68 +70,84 @@ export default function Home() {
             </div>
 
           </div>
-          <div className={'duration-700  delay-900 ' + (fading)}>
+          <div className={'duration-700  delay-900 w-full max-w-2xl ' + (fading)}>
 
             <p className={'text-gray-600 font-semibold text-xl dark:text-gray-400 break-all mb-6'}>
               {"Where I've Been"}
             </p>
             <div className="flex flex-col  gap-y-8">
               <div className="   items-center flex-col">
-                <div className="flex flex-row  items-center  mb-4">
-                  <Image
-                    alt="Tri Ho"
-                    height={40}
-                    width={40}
-                    src="/1password.png"
-                    priority
-                    className={'mr-4 p-2 bg-blue-300/50 rounded-lg'}
-                  />
-                  <div className="text leading-6 items-center">
-                  <div className="dark:text-white text-gray-800 ">
-                      1Password
-                    </div>
-                    <div className="dark:text-gray-400 text-gray-600">
-                      User Life & Growth - Provisioning, Software Developer
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-row self-center items-center mb-4">
-                  <Image
+              <div className="flex flex-row self-center items-center mb-4">
+                  {/* <Image
                     alt="Tri Ho"
                     height={40}
                     width={40}
                     src="/huawei.svg"
                     priority
                     className={'mr-4 p-2 bg-red-300/50 rounded-lg'}
-                  />
-                  <div className="text leading-6 ">
+                  /> */}
+                  <div className="w-5/12">
+                    <div className="dark:text-white text-gray-800 ">
+                      1Password
+                    </div>
+                    <div className="dark:text-gray-400 text-gray-600 text-sm">
+                      Software Developer Intern
+                    </div>
+                  </div>
+                  <span className="w-full border-t border-gray-300 mx-4 border-dashed shrink dark:border-gray-800"></span>
+
+                  <div className="dark:text-gray-400 text-gray-600">
+                    2022
+                  </div>
+                </div>
+
+                <div className="flex flex-row self-center items-center mb-4">
+                  {/* <Image
+                    alt="Tri Ho"
+                    height={40}
+                    width={40}
+                    src="/huawei.svg"
+                    priority
+                    className={'mr-4 p-2 bg-red-300/50 rounded-lg'}
+                  /> */}
+                  <div className="w-5/12">
                     <div className="dark:text-white text-gray-800 ">
                       Huawei
                     </div>
-                    <div className="dark:text-gray-400 text-gray-600">
-                      GaussDB, Software Engineering Intern
+                    <div className="dark:text-gray-400 text-gray-600 text-sm">
+                      Software Engineering Intern
                     </div>
+                  </div>
+                  <span className="w-full border-t border-gray-300 mx-4 border-dashed shrink dark:border-gray-800"></span>
+
+                  <div className="dark:text-gray-400 text-gray-600">
+                    2022
                   </div>
                 </div>
 
 
-                <div className="flex flex-row items-center mb-4">
-                  <Image
+
+                <div className="flex flex-row self-center items-center mb-4">
+                  {/* <Image
                     alt="Tri Ho"
                     height={40}
                     width={40}
-                    src="/1password.png"
+                    src="/huawei.svg"
                     priority
-                    className={'mr-4 p-2 bg-blue-300/50 rounded-lg'}
-                  />
-                  <div className="text leading-6 items-center">
-                  <div className="dark:text-white text-gray-800 ">
+                    className={'mr-4 p-2 bg-red-300/50 rounded-lg'}
+                  /> */}
+                  <div className="w-5/12">
+                    <div className="dark:text-white text-gray-800 ">
                       1Password
                     </div>
-                    <div className="dark:text-gray-400 text-gray-600">
-                      User Life & Growth - Provisioning, Software Developer
+                    <div className="dark:text-gray-400 text-gray-600 text-sm">
+                      Software Developer Intern
                     </div>
+                  </div>
+                  <span className="w-full border-t border-gray-300 mx-4 border-dashed shrink dark:border-gray-800"></span>
+
+                  <div className="dark:text-gray-400 text-gray-600">
+                    2021
                   </div>
                 </div>
 
