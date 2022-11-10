@@ -149,6 +149,30 @@ export default function Home() {
                   </span>
                 </div>
 
+                <div className="flex flex-row justify-items-start items-center mb-4">
+                <Image
+                    alt="Tri Ho"
+                    height={40}
+                    width={40}
+                    src="/waterloo.png"
+                    priority
+                    className={'mr-4 p-2 rounded-lg'}
+                  />
+                  <div className="w-5/12">
+                    <div className="dark:text-white text-gray-800 ">
+                      University of Waterloo
+                    </div>
+                    <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
+                      Computer Science , Bachelors
+                    </span>
+                  </div>
+                  <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
+
+                  <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                    2020-2024
+                  </span>
+                </div>
+
 
               </div>
 
