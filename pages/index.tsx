@@ -96,12 +96,12 @@ export default function Home() {
                   </div>
                   <span className="w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                  <span className="dark:text-gray-400 whitespace-nowrap  text-gray-600 text-sm">
+                  <span className="dark:text-gray-400  w-2/12 text-right text-gray-600 text-sm">
                     Fall 2022
                   </span>
                 </div>
 
-                <div className="flex flex-row self-center items-center mb-4">
+                <div className="flex flex-row items-center mb-4">
                   <Image
                     alt="Tri Ho"
                     height={40}
@@ -120,7 +120,7 @@ export default function Home() {
                   </div>
                   <span className="w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
+                  <span className="dark:text-gray-400 w-3.5/12 text-right text-gray-600 text-sm">
                     Winter 2022
                   </span>
                 </div>
@@ -146,7 +146,7 @@ export default function Home() {
                   </div>
                   <span className="w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
+                  <span className="dark:text-gray-400 w-3.5/12  text-right text-gray-600 text-sm">
                     Summer 2021
                   </span>
                 </div>
