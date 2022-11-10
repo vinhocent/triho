@@ -24,14 +24,7 @@ export default function Home() {
   }, []);
 
   const { resolvedTheme } = useTheme()
-  let src
-
-  switch (resolvedTheme) {
-
-    default:
-      src = '/mikupinkpfp.jpg'
-      break
-  }
+  let src = '/mikupinkpfp.jpg'
 
   return (
     <div className={styles.container}>
@@ -48,18 +41,18 @@ export default function Home() {
           <div className="flex flex-col-reverse sm:flex-row items-start ">
 
             <div className="flex flex-col pr-8">
-              <h1 className={'font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-700 ' + (fading)}>
+              <h1 className={'font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-600 ' + (fading)}>
                 tr1e_
               </h1>
-              <h2 className={'text-gray-700 dark:text-gray-200 mb-4 mt-2 transition-opacity duration-700  delay-500 ' + (fading)}>
+              <h2 className={'text-gray-700 dark:text-gray-200 mb-4 mt-2 transition-opacity duration-600  delay-600 ' + (fading)}>
 
                 student/developer/learner
               </h2>
-              <p className={'text-gray-600 dark:text-gray-400 mb-16 break-normal duration-700  delay-700 ' + (fading)}>
+              <p className={'text-gray-600 dark:text-gray-400 mb-16 break-normal duration-600  delay-700 ' + (fading)}>
                 {"I'm a student studying Computer Science. What do I do? I am not sure haha? I love learning thats for sure."}
               </p>
             </div>
-            <div className={'duration-700  delay-600 ' + (fading)}>
+            <div className={'duration-800  delay-800 ' + (fading)}>
               <Image
                 alt="Tri Ho"
                 height={300}
@@ -70,7 +63,7 @@ export default function Home() {
             </div>
 
           </div>
-          <div className={'duration-700  delay-900 w-full max-w-2xl ' + (fading)}>
+          <div className={'duration-900  delay-900 w-full max-w-2xl ' + (fading)}>
 
             <p className={'text-gray-600 font-semibold text-xl dark:text-gray-400 break-all mb-6'}>
               {"Where I've Been"}

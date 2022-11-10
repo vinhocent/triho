@@ -56,7 +56,7 @@ const Header = () => {
   const { theme, setTheme } = useTheme()
 
   const [fading, setFading] = useState(' opacity-0 ease-in ');
-  const [faded, setFaded] = useState('  delay-700 duration-700 ')
+  const [faded, setFaded] = useState('  delay-1000 duration-900 ')
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [tabUnderlineWidth, setTabUnderlineWidth] = useState<any | null>(null);
   const [tabUnderlineLeft, setTabUnderlineLeft] = useState<any | null>(null);
