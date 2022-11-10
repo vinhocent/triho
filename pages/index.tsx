@@ -148,6 +148,7 @@ export default function Home() {
                     Summer 2021
                   </span>
                 </div>
+                <span className=" flex  w-full border-t dark:border-gray-500 my-6 self-end shrink border-gray-400"></span>
 
                 <div className="flex flex-row justify-items-start items-center mb-4">
                   <Image
