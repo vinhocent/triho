@@ -76,21 +76,21 @@ export default function Home() {
               {"Where I've Been"}
             </p>
             <div className="flex flex-col  gap-y-8">
-              <div className="   items-center   flex flex-col">
+              <div className="   items-center flex-col">
                 <div className="flex flex-row  items-center  mb-4">
                   <Image
                     alt="Tri Ho"
                     height={40}
                     width={40}
-                    src={src}
+                    src="/1password.png"
                     priority
-                    className={'mr-4'}
+                    className={'mr-4 p-2 bg-blue-300/50 rounded-lg'}
                   />
                   <div className="text leading-6 items-center">
-                    <div className="text-white ">
+                  <div className="dark:text-white text-gray-800 ">
                       1Password
                     </div>
-                    <div className="text-gray-600 ">
+                    <div className="dark:text-gray-400 text-gray-600">
                       User Life & Growth - Provisioning, Software Developer
                     </div>
                   </div>
@@ -101,16 +101,16 @@ export default function Home() {
                     alt="Tri Ho"
                     height={40}
                     width={40}
-                    src={src}
+                    src="/huawei.svg"
                     priority
-                    className={'mr-4'}
+                    className={'mr-4 p-2 bg-red-300/50 rounded-lg'}
                   />
                   <div className="text leading-6 ">
-                    <div className="text-white ">
+                    <div className="dark:text-white text-gray-800 ">
                       Huawei
                     </div>
-                    <div className="text-gray-600 ">
-                      GaussDB, Software 
+                    <div className="dark:text-gray-400 text-gray-600">
+                      GaussDB, Software Engineering Intern
                     </div>
                   </div>
                 </div>
@@ -121,15 +121,15 @@ export default function Home() {
                     alt="Tri Ho"
                     height={40}
                     width={40}
-                    src={src}
+                    src="/1password.png"
                     priority
-                    className={'mr-4'}
+                    className={'mr-4 p-2 bg-blue-300/50 rounded-lg'}
                   />
                   <div className="text leading-6 items-center">
-                    <div className="text-white ">
+                  <div className="dark:text-white text-gray-800 ">
                       1Password
                     </div>
-                    <div className="text-gray-600 ">
+                    <div className="dark:text-gray-400 text-gray-600">
                       User Life & Growth - Provisioning, Software Developer
                     </div>
                   </div>
