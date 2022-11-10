@@ -94,9 +94,9 @@ export default function Home() {
                       Software Developer Intern
                     </span>
                   </div>
-                  <span className="w-full border-t dark:border-gray-300 mx-4 border-dashed shrink border-gray-400"></span>
+                  <span className="w-full border-t dark:border-gray-300 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
+                  <span className="dark:text-gray-400 whitespace-nowrap  text-gray-600 text-sm">
                     Fall 2022
                   </span>
                 </div>
@@ -118,7 +118,7 @@ export default function Home() {
                       Software Engineering Intern
                     </span>
                   </div>
-                  <span className="w-full border-t dark:border-gray-300 mx-4 border-dashed shrink border-gray-400"></span>
+                  <span className="w-full border-t dark:border-gray-300 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
                   <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
                     Winter 2022
@@ -144,7 +144,7 @@ export default function Home() {
                       Software Developer Intern
                     </span>
                   </div>
-                  <span className="w-full border-t dark:border-gray-300 mx-4 border-dashed shrink border-gray-400"></span>
+                  <span className="w-full border-t dark:border-gray-300 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
                   <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
                     Summer 2021
