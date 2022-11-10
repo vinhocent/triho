@@ -71,12 +71,6 @@ const Header = () => {
 
 
     }, 1100)
-
-
-
-
-
-  
     
   }, []);
 
@@ -95,7 +89,6 @@ const Header = () => {
   // useEffect only runs on the client, so now we can safely show the UI
 
   return (
-
     <div className= {'flex flex-col justify-center px-8 ' + (faded) + (fading) }>
         {/* // <div className= {'flex flex-col justify-center px-8 ' + (faded)+ (fading ? 'opacity-100 ease-in ' : 'opacity-0 ease-in ' )}> */}
           <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 ">
@@ -120,11 +113,8 @@ const Header = () => {
           className={ 'absolute top-70 block h-10 -z-10 md:inline-block p-1 sm:px-3 sm:py-2 rounded  bg-amber-100 dark:bg-gray-800 transition-all duration-300' + (opac)}
           style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
         /> 
-                        
-                
             </div>
             <ThemeSwitch/>
-
           </nav>
         </div>
   )
