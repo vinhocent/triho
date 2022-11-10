@@ -56,7 +56,7 @@ export default function Home() {
                 student/developer/learner
               </h2>
               <p className={'text-gray-600 dark:text-gray-400 mb-16 break-normal duration-700  delay-700 ' + (fading)}>
-                I'm a student at the University of Waterloo studying Computer Science. What do I do? I am not sure haha? I love learning thats for sure.
+                {"I'm a student at the University of Waterloo studying Computer Science. What do I do? I am not sure haha? I love learning thats for sure."}
               </p>
             </div>
             <div className={'duration-700  delay-600 ' + (fading)}>
@@ -73,7 +73,7 @@ export default function Home() {
           <div className={'duration-700  delay-900 ' + (fading)}>
 
             <p className={'text-gray-600 font-semibold text-xl dark:text-gray-400 break-all mb-6'}>
-              Where I've Been
+              {"Where I've Been"}
             </p>
             <div className="flex flex-col  gap-y-8">
               <div className="   items-center   flex flex-col">
