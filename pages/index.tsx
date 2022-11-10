@@ -86,19 +86,19 @@ export default function Home() {
                     priority
                     className={'mr-4 p-2 bg-red-300/50 rounded-lg'}
                   /> */}
-                  <div className="w-5/12">
+                  <div className="w-fit">
                     <div className="dark:text-white text-gray-800 ">
                       1Password
                     </div>
-                    <div className="dark:text-gray-400 text-gray-600 text-sm">
+                    <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
                       Software Developer Intern
-                    </div>
+                    </span>
                   </div>
                   <span className="w-full border-t border-gray-300 mx-4 border-dashed shrink dark:border-gray-800"></span>
 
-                  <div className="dark:text-gray-400 text-gray-600">
-                    2022
-                  </div>
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
+                    Fall 2022
+                  </span>
                 </div>
 
                 <div className="flex flex-row self-center items-center mb-4">
@@ -110,19 +110,19 @@ export default function Home() {
                     priority
                     className={'mr-4 p-2 bg-red-300/50 rounded-lg'}
                   /> */}
-                  <div className="w-5/12">
+                  <div className="">
                     <div className="dark:text-white text-gray-800 ">
                       Huawei
                     </div>
-                    <div className="dark:text-gray-400 text-gray-600 text-sm">
+                    <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
                       Software Engineering Intern
-                    </div>
+                    </span>
                   </div>
                   <span className="w-full border-t border-gray-300 mx-4 border-dashed shrink dark:border-gray-800"></span>
 
-                  <div className="dark:text-gray-400 text-gray-600">
-                    2022
-                  </div>
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
+                    Winter 2022
+                  </span>
                 </div>
 
 
@@ -140,15 +140,15 @@ export default function Home() {
                     <div className="dark:text-white text-gray-800 ">
                       1Password
                     </div>
-                    <div className="dark:text-gray-400 text-gray-600 text-sm">
+                    <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
                       Software Developer Intern
-                    </div>
+                    </span>
                   </div>
                   <span className="w-full border-t border-gray-300 mx-4 border-dashed shrink dark:border-gray-800"></span>
 
-                  <div className="dark:text-gray-400 text-gray-600">
-                    2021
-                  </div>
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm">
+                    Summer 2021
+                  </span>
                 </div>
 
 
