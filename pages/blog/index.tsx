@@ -2,6 +2,8 @@ import type { NextPage, GetStaticProps } from 'next'
 import { IPost } from "../../types/post";
 import Link from 'next/link'
 import { getAllPosts } from "../../lib/mdx";
+import { useState, useEffect } from 'react'
+
 
 // props type
 type Props = {
@@ -10,17 +12,40 @@ type Props = {
 
 // component render function
 const Home: NextPage<Props> = ({ posts }: Props) => {
+
+  const [fading, setFading] = useState(' opacity-0 ease-in ');
+  const [faded, setFaded] = useState(' duration-500 ')
+  const [delay, setDelay] = useState(' delay-500 ')
+  const [nume, setNume] = useState(0)
+
+
+  useEffect(() => {
+    setFading(' opacity-100 ease-in ')
+
+
+    // setFading(true);
+
+  }, []);
+
+  // function setFadeTimes(idx: number) : string{
+  //   let timing = 500 + idx*100
+  //   if(timing >= 1000){
+  //       timing = 1000
+  //   }
+  //   return 'delay-' + timing.toString() 
+  // }
+  
+     
+
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
-    <h1 className={'font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-600 ' }>
+    <h1 className={'font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-600 ' + (fading) }>
                 blog
               </h1>
-    <div className=" flex-col items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 ">
+    <div className={' flex-col items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 '}>
        
-      {posts.map((post) => (
-        <div key={post.slug} className=" flex flex-row justify-items-start items-center mb-4 " >
-
-
+      {posts.map((post, i) => (
+        <li key={post.slug} delay-offset={500+i*100}className={' flex flex-row justify-items-start items-center mb-4 transition-opacity '  + (faded)  + (fading)}>
 
           <Link href={`/blog/${post.slug}`}>
             <div className="dark:text-white text-gray-800 ">
@@ -37,7 +62,7 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
           <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
             {post.date}
           </span>
-        </div>
+        </li>
       ))}
     </div>
     </div>

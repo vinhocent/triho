@@ -48,7 +48,7 @@ export default function Home() {
 
                 student/developer/learner
               </h2>
-              <p className={'text-gray-600 dark:text-gray-400 mb-16 break-normal duration-600  delay-700 ' + (fading)}>
+              <p className={'text-gray-600 dark:text-gray-400 mb-16 break-normal transition-opacity duration-600   delay-700 ' + (fading)}>
                 {"I'm a student studying Computer Science. What do I do? I am not sure haha? I love learning thats for sure."}
               </p>
             </div>
@@ -63,14 +63,14 @@ export default function Home() {
             </div>
 
           </div>
-          <div className={'duration-900  delay-900 w-full max-w-2xl ' + (fading)}>
+          <div className={'w-full max-w-2xl '}>
 
-            <p className={'text-gray-600 font-semibold text-xl dark:text-gray-400 break-all mb-6'}>
+            <p className={'text-gray-600 font-semibold text-xl dark:text-gray-400 break-all mb-6 transition-opacity duration-600   delay-700 ' + (fading)}>
               {"Where I've Been"}
             </p>
             <div className="flex flex-col  gap-y-8">
               <div className="   items-center flex-col">
-                <div className="flex flex-row justify-items-start items-center mb-4">
+                <ul className={'flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600' + (fading)} >
                   <Image
                     alt="Tri Ho"
                     height={40}
@@ -92,9 +92,9 @@ export default function Home() {
                   <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
                     Fall 2022
                   </span>
-                </div>
+                </ul>
 
-                <div className="flex flex-row justify-items-start items-center mb-4">
+                <ul className={'flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600' + (fading)} >
                   <Image
                     alt="Tri Ho"
                     height={40}
@@ -116,9 +116,9 @@ export default function Home() {
                   <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
                     Winter 2022
                   </span>
-                </div>
+                </ul>
 
-                <div className="flex flex-row justify-items-start items-center mb-4">
+                <ul className={'flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600' + (fading)} >
                   <Image
                     alt="Tri Ho"
                     height={40}
@@ -140,10 +140,12 @@ export default function Home() {
                   <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
                     Summer 2021
                   </span>
-                </div>
-                <span className=" flex  w-full border-t dark:border-gray-500 my-6 self-end shrink border-gray-400"></span>
+                </ul>
+                <ul className={'list-none transition-opacity duration-600' + (fading)} >
+                  <span className=" flex  w-full border-t opacity-60 dark:border-gray-500 my-6 self-end shrink border-gray-400"></span>
 
-                <div className="flex flex-row justify-items-start items-center mb-4">
+                </ul>
+                <ul className={'flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600' + (fading)} >
                   <Image
                     alt="Tri Ho"
                     height={40}
@@ -165,7 +167,7 @@ export default function Home() {
                   <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
                     2020-2024
                   </span>
-                </div>
+                </ul>
 
 
               </div>

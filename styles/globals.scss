@@ -25,3 +25,15 @@ a {
     @apply dark:bg-black bg-amber-50;
   }
 }
+
+    
+@for $i from 1 through 10 {
+    li:nth-child(#{$i}n) {
+        transition-delay: #{$i * 100 + 500}ms;
+    }
+}
+@for $i from 1 through 10 {
+  ul:nth-child(#{$i}n) {
+      transition-delay: #{$i * 100 + 700}ms;
+  }
+}
