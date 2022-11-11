@@ -51,16 +51,16 @@ const Footer = () => {
           Home
         </Link>
         <Link
-          href="/about"
+          href="/"
           className="text-gray-500 hover:text-gray-600 transition"
         >
           About
         </Link>
         <Link
-          href="/newsletter"
+          href="/"
           className="text-gray-500 hover:text-gray-600 transition"
         >
-          Newsletter
+          Link
         </Link>
       </div>
       <div className="flex flex-col space-y-4">
@@ -68,22 +68,22 @@ const Footer = () => {
       </div>
       <div className="flex flex-col space-y-4">
         <Link
-          href="/uses"
+          href="/"
           className="text-gray-500 hover:text-gray-600 transition"
         >
-          Uses
+          Link
         </Link>
         <Link
-          href="/guestbook"
+          href="/"
           className="text-gray-500 hover:text-gray-600 transition"
         >
-          Guestbook
+          Link
         </Link>
         <Link
-          href="/snippets"
+          href="/404"
           className="text-gray-500 hover:text-gray-600 transition"
         >
-          Snippets
+          404
         </Link>
 
       </div>
