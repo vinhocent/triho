@@ -23,7 +23,6 @@ export default function Home() {
 
   }, []);
 
-  const { resolvedTheme } = useTheme()
   let src = '/mikupinkpfp.jpg'
 
   return (
