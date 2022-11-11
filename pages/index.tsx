@@ -171,7 +171,7 @@ const Home: NextPage = () => {
                     University of Waterloo
                   </div>
                   <span className="dark:text-gray-400 whitespace-nowrap  text-gray-600 text-sm ">
-                    B.S. Computer Science & C&O, Honours Co-op
+                    B.S. Computer Science & C&O
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
