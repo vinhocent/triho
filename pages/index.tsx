@@ -4,12 +4,9 @@ import { useTheme } from "next-themes";
 import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import type { NextPage } from "next";
-import { IPost } from "../../types/post";
 
 // props type
-type Props = {
-  posts: [IPost];
-};
+
 const Home: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
 
