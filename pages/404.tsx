@@ -1,8 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Page from '../components/page'
-
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function _404() {
   return (
@@ -13,10 +11,7 @@ export default function _404() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-  <Page>
-    <div> LOLOLOL</div>
-  </Page>
+      <div> LOLOLOL</div>
     </div>
-  )
+  );
 }
