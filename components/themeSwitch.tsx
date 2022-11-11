@@ -7,11 +7,32 @@ const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
+  // check and reset theme
+  const themeCheck = () => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  }
+
+
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
-    setTheme('dark')
+    themeCheck();
     setMounted(true)
-  }, [])
+  }, [theme]);
+
+  // check theme on component mount
+  useEffect(() => {
+    themeCheck();
+    setMounted(true)
+
+  }, []);
 
   if (!mounted) {
     return null
