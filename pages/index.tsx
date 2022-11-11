@@ -10,15 +10,10 @@ export default function Home() {
 
 
   const [fading, setFading] = useState(' opacity-0 ease-in ');
-  const [faded, setFaded] = useState('  delay-1000 duration-700 ')
 
   useEffect(() => {
     setFading(' opacity-100 ease-in ')
-    setTimeout(() => {
-      setFaded(' ')
 
-
-    }, 1100)
     // setFading(true);
 
   }, []);

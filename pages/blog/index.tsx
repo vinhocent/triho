@@ -14,7 +14,6 @@ type Props = {
 const Home: NextPage<Props> = ({ posts }: Props) => {
 
   const [fading, setFading] = useState(' opacity-0 ease-in ');
-  const [faded, setFaded] = useState(' duration-500 ')
 
 
   useEffect(() => {
@@ -34,7 +33,7 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
     <div className={'group flex-col items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 '}>
        
       {posts.map((post, i) => (
-        <li key={post.slug} className={'group/item flex flex-row justify-items-start items-center mb-4 transition-opacity '  + (faded)  + (fading)}>
+        <li key={post.slug} className={'group/item flex flex-row justify-items-start items-center mb-4 transition-opacity duration-500'   + (fading)}>
 
           <Link href={`/blog/${post.slug}`}>
             <div className="dark:text-white text-gray-800 dark:group-hover:text-gray-500 dark:group-hover/item:text-gray-100 duration-300 group-hover:text-gray-400 group-hover/item:text-black ">
