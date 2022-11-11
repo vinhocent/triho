@@ -12,6 +12,8 @@ export default function Home() {
   const [fading, setFading] = useState(' opacity-0 ease-in ');
 
   useEffect(() => {
+    setFading(' opacity-0 ease-in ')
+ 
     setFading(' opacity-100 ease-in ')
 
     // setFading(true);
