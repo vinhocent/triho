@@ -15,26 +15,15 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
 
   const [fading, setFading] = useState(' opacity-0 ease-in ');
   const [faded, setFaded] = useState(' duration-500 ')
-  const [delay, setDelay] = useState(' delay-500 ')
-  const [nume, setNume] = useState(0)
 
 
   useEffect(() => {
     setFading(' opacity-100 ease-in ')
 
 
-    // setFading(true);
-
   }, []);
 
-  // function setFadeTimes(idx: number) : string{
-  //   let timing = 500 + idx*100
-  //   if(timing >= 1000){
-  //       timing = 1000
-  //   }
-  //   return 'delay-' + timing.toString() 
-  // }
-  
+
      
 
   return (

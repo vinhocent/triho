@@ -1,6 +1,6 @@
 import { serialize } from 'next-mdx-remote/serialize';
 import { GetStaticProps, GetStaticPaths } from 'next';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
 
 import { IPost } from '../../types/post';
@@ -17,29 +17,56 @@ type Props = {
 
 
 const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
+    const [fading, setFading] = useState(' opacity-0 ease-in ');
+
+  
+  
+    useEffect(() => {
+      setFading(' opacity-100 ease-in ')
+  
+  
+    }, []);
+  
 
     // get setters
-
-
-
     return (
-        <div>
+        <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 px-8 sm:px-0 mx-auto pb-12">
+            <h1 className={'font-bold text-2xl md:text-4xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-600 '+ (fading)}>
+                {frontMatter.title}
+            </h1>
+            <div className={' flex-col items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-2 pb-8 '}>
+                <ul className={' flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600 '+ (fading)}>
 
-            <article className="prose prose-green">
-                <div className="mb-4">
-                </div>
-
-                <h1>{frontMatter.title}</h1>
-
-                <p>{frontMatter.description}</p>
-                <MDXRemote  {...source} />
+                    <div className="dark:text-white text-gray-800 ">
+                        {frontMatter.date}
+                    </div>
 
 
-            </article>
+                </ul>
+
+                <ul className={' flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600 '+ (fading)}>
+
+                    <div className="dark:text-white text-gray-800 ">
+                        {frontMatter.description}
+                    </div>
+                </ul>
+        <ul className={'transition-opacity duration-600 ' +(fading)}>
+        <span className=" flex  w-full border-t opacity-60 dark:border-gray-500 my-6 self-end shrink border-gray-400"></span>
+
+        </ul>
+<div className={'transition-opacity delay-1200 duration-600'+ (fading)}>
+<MDXRemote  {...source} />
+</div>
+                
+
+            </div>
         </div>
     )
+
+
 }
 
+{/* <MDXRemote  {...source} /> */ }
 export default PostPage;
 
 interface Iparams extends ParsedUrlQuery {
