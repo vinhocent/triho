@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   let src = "/mikupinkpfp.jpg";
 
   return (
-    <div>
+    <div className="px-8">
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
         <div className="flex flex-col-reverse sm:flex-row items-start ">
           <div className="flex flex-col pr-8">
@@ -170,8 +170,8 @@ const Home: NextPage = () => {
                   <div className="dark:text-white text-gray-800 ">
                     University of Waterloo
                   </div>
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
-                    Computer Science + C&O , Bachelors
+                  <span className="dark:text-gray-400 whitespace-nowrap  text-gray-600 text-sm ">
+                    B.S. Computer Science & C&O, Honours Co-op
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
