@@ -1,4 +1,4 @@
-# tr1e\_
+# tr1e portfolio\_
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
@@ -13,7 +13,7 @@
 - `public/*` - Static assets including fonts and images.
 - `styles/*` - Global styles lives here, most things are done w/ Vanilla Tailwind CSS but some niche things exist here
 
-## Running Locally
+## Running Locally 
 
 This application requires Node version: 14.15.3
 
