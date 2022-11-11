@@ -44,9 +44,6 @@ const ThemeSwitch = () => {
       return(
         <SunIcon 
         className = "w-5 h-5"          
-            
-        onClick={() =>
-          setTheme(theme === 'dark' ? 'light' : 'dark')}
           />
   
       )
@@ -54,8 +51,7 @@ const ThemeSwitch = () => {
       return(
         <MoonIcon   
         className = "w-5 h-5"          
-        onClick={() =>
-          setTheme(theme === 'dark' ? 'light' : 'dark')}
+ 
           />
       )
 
@@ -69,6 +65,8 @@ const ThemeSwitch = () => {
          <button
             aria-label="Toggle Dark Mode"
             type="button"
+            onClick={() =>
+              setTheme(theme === 'dark' ? 'light' : 'dark')}
             className=" w-9 h-9 bg-amber-100 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all" >
               {renderLogo()}
 
