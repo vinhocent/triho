@@ -18,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
   <ThemeProvider enableSystem={true} attribute="class">
         <Header/>
       <Component {...pageProps} />
+      <script> </script>
       <Footer/>
   </ThemeProvider>
   )
