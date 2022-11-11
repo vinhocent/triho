@@ -89,7 +89,7 @@ const Header = () => {
   // useEffect only runs on the client, so now we can safely show the UI
 
   return (
-    <div className= {'flex flex-col justify-center px-8 ' + (faded) + (fading) }>
+    <div className= {'w-full flex flex-col justify-center px-8 ' + (faded) + (fading) }>
         {/* // <div className= {'flex flex-col justify-center px-8 ' + (faded)+ (fading ? 'opacity-100 ease-in ' : 'opacity-0 ease-in ' )}> */}
           <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 ">
             <div className="ml-[-0.60rem]">
