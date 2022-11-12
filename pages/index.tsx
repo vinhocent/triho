@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                 fading
               }
             >
-              student/developer/learner
+              digital warlord
             </h2>
             <p
               className={
