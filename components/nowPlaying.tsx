@@ -92,7 +92,7 @@ export default function NowPlaying() {
       <div className="inline-flex flex-col sm:flex-row w-full max-w-full truncate">
         {data?.songUrl ? (
           <a
-            className="capsize text-gray-800 dark:text-gray-200 font-medium  max-w-max "
+            className="capsize text-gray-500 dark:text-gray-40 hover:dark:text-gray-100 hover:text-gray-800 font-medium  max-w-max ease-in transition-colors duration-200 "
             href={data.songUrl}
             target="_blank"
             rel="noopener noreferrer"
