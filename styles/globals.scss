@@ -1,9 +1,7 @@
-
 @tailwind base;
 @tailwind components;
-@tailwind utilities;z
-
-html,
+@tailwind utilities;
+z html,
 body {
   padding: 0;
   margin: 0;
@@ -26,21 +24,19 @@ a {
   }
 }
 
-    
 @for $i from 1 through 50 {
-    li:nth-child(#{$i}n) {
-        transition-delay: #{$i * 100 + 500}ms;
-    }
+  li:nth-child(#{$i}n) {
+    transition-delay: #{$i * 100 + 500}ms;
+  }
 }
 @for $i from 1 through 50 {
   ul:nth-child(#{$i}n) {
-      transition-delay: #{$i * 100 + 700}ms;
+    transition-delay: #{$i * 100 + 700}ms;
   }
 }
 
 @layer components {
   .blogitem {
-    @apply group-hover:text-gray-500
+    @apply group-hover:text-gray-500;
   }
 }
-
