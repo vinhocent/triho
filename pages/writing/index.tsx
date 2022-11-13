@@ -26,7 +26,7 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
             fading
           }
         >
-          blog
+          writing
         </h1>
         <div
           className={

@@ -33,7 +33,7 @@ const Home: NextPage = () => {
                 fading
               }
             >
-              digital warlord
+              digital warlord @f0r3st
             </h2>
             <p
               className={
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           </div>
           <div className={"duration-800  delay-800 " + fading}>
             <Image
-              alt="Tri Ho"
+              alt="me in blue pixels"
               height={300}
               width={300}
               src="/mealt.png"
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
               className="dark:inline hidden "
             />
             <Image
-              alt="Tri Ho"
+              alt="me in red pixels"
               height={300}
               width={300}
               src="/me.png"

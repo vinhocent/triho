@@ -9,13 +9,13 @@ const ThemeSwitch = () => {
   // check and reset theme
   const themeCheck = () => {
     if (
-      localStorage.theme === "dark" ||
+      localStorage.theme === "light" ||
       (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
+        window.matchMedia("(prefers-color-scheme: light)").matches)
     ) {
-      setTheme("dark");
-    } else {
       setTheme("light");
+    } else {
+      setTheme("dark");
     }
   };
 
