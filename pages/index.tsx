@@ -14,7 +14,17 @@ const Home: NextPage = () => {
     setFading(" opacity-100 ease-in ");
   }, []);
 
-  let src = "/mikupinkpfp.jpg";
+  let src;
+  const { resolvedTheme } = useTheme();
+
+  switch (resolvedTheme) {
+    case "dark":
+      src = "/mealt.png";
+      break;
+    case "light":
+      src = "/me.png";
+      break;
+  }
 
   return (
     <div className="px-8">
