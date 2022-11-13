@@ -1,4 +1,5 @@
 import { getNowPlaying } from "../../lib/spotify";
+import { type NextRequest } from "next/server";
 
 export default async (
   _: any,

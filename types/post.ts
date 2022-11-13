@@ -13,3 +13,6 @@ export type NowPlayingSong = {
   songUrl: string;
   title: string;
 };
+export type PlayState = {
+  isPlaying: boolean;
+};
