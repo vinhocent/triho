@@ -1,7 +1,15 @@
 export interface IPost {
-    slug:string;
-    date:string;
-    title:string;
-    description:string;
-
+  slug: string;
+  date: string;
+  title: string;
+  description: string;
 }
+
+export type NowPlayingSong = {
+  album: string;
+  albumImageUrl: string;
+  artist: string;
+  isPlaying: boolean;
+  songUrl: string;
+  title: string;
+};

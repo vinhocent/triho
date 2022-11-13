@@ -1,95 +1,83 @@
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import ThemeSwitch from './themeSwitch'
-import Link from 'next/link'
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import ThemeSwitch from "./themeSwitch";
+import Link from "next/link";
 
-
-import { useRouter } from 'next/router';
-import NextLink from 'next/link';
-import styles from '../styles/Home.module.css'
-
-
-
+import { useRouter } from "next/router";
+import NextLink from "next/link";
+import styles from "../styles/Home.module.css";
+import NowPlaying from "./nowPlaying";
 
 const Footer = () => {
+  const [fading, setFading] = useState(" opacity-0 ease-in ");
+  const [faded, setFaded] = useState("  delay-1000 duration-900 ");
 
-
-  
-  
-
-    const [fading, setFading] = useState(' opacity-0 ease-in ');
-    const [faded, setFaded] = useState('  delay-1000 duration-900 ')
-  
-    useEffect( () =>{
-      setFading(' opacity-100  ease-in')
-      setTimeout(() => {
-         setFaded(' ') 
-  
-  
-      }, 1100)
-      // setFading(true);
-  
-  
-    
-      
-    }, []);
+  useEffect(() => {
+    setFading(" opacity-100  ease-in");
+    setTimeout(() => {
+      setFaded(" ");
+    }, 1100);
+    // setFading(true);
+  }, []);
   // useEffect only runs on the client, so now we can safely show the UI
 
-  return (              
-    <footer className= {'flex flex-col justify-center px-8 ' + (faded) + (fading)}>
-
-    <div className="max-w-2xl mx-auto w-full  justify-center h-5 border-b-1px border-black dark:border-white text-2xl text-center ">
-        <span className="bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5">✵ ✵ ✵</span>
-    </div>
-
-    <div className="max-w-2xl mx-auto w-full  grid grid-cols-1 gap-4 pb-16 pt-8 sm:grid-cols-3 ">
-      <div className="flex flex-col space-y-4">
-        <Link
-          href="/"
-          className="text-gray-500 hover:text-gray-600 transition"
-        >
-          Home
-        </Link>
-        <Link
-          href="/"
-          className="text-gray-500 hover:text-gray-600 transition"
-        >
-          About
-        </Link>
-        <Link
-          href="/"
-          className="text-gray-500 hover:text-gray-600 transition"
-        >
-          Link
-        </Link>
+  return (
+    <footer className={"flex flex-col justify-center px-8 " + faded + fading}>
+      <div className="max-w-2xl mx-auto w-full  justify-center h-5 border-b-1px border-black dark:border-white text-2xl text-center ">
+        <span className="bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5">
+          ✵ ✵ ✵
+        </span>
       </div>
-      <div className="flex flex-col space-y-4">
-  
-      </div>
-      <div className="flex flex-col space-y-4">
-        <Link
-          href="/"
-          className="text-gray-500 hover:text-gray-600 transition"
-        >
-          Link
-        </Link>
-        <Link
-          href="/"
-          className="text-gray-500 hover:text-gray-600 transition"
-        >
-          Link
-        </Link>
-        <Link
-          href="/404"
-          className="text-gray-500 hover:text-gray-600 transition"
-        >
-          404
-        </Link>
 
+      <div className="max-w-2xl mx-auto w-full  grid grid-cols-1  pt-8 sm:grid-cols-3 ">
+        <NowPlaying />
       </div>
-    </div>
-  </footer>
-  )
-}
 
-export default Footer
+      <div className="max-w-2xl mx-auto w-full  grid grid-cols-1 gap-4 pb-16 pt-8 sm:grid-cols-3 ">
+        <div className="flex flex-col space-y-4">
+          <Link
+            href="/"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Home
+          </Link>
+          <Link
+            href="/"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            About
+          </Link>
+          <Link
+            href="/"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Link
+          </Link>
+        </div>
+        <div className="flex flex-col space-y-4"></div>
+        <div className="flex flex-col space-y-4">
+          <Link
+            href="/"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Link
+          </Link>
+          <Link
+            href="/"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Link
+          </Link>
+          <Link
+            href="/404"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            404
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
