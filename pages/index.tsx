@@ -24,6 +24,9 @@ const Home: NextPage = () => {
     case "light":
       src = "/me.png";
       break;
+    default:
+      src = "/mikupinkpfp.jpg";
+      break;
   }
 
   return (
