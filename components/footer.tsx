@@ -29,7 +29,7 @@ const Footer = () => {
         </span>
       </div>
 
-      <div className="max-w-2xl mx-auto w-full  grid grid-cols-1  pt-8 sm:grid-cols-3 ">
+      <div className="max-w-2xl mx-auto w-full    pt-8 ">
         <NowPlaying />
       </div>
 
