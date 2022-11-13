@@ -41,7 +41,7 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
                 fading
               }
             >
-              <Link href={`/blog/${post.slug}`}>
+              <Link href={`/writing/${post.slug}`}>
                 <div className="dark:text-white text-gray-800 dark:group-hover:text-gray-500 dark:group-hover/item:text-gray-100 duration-300 group-hover:text-gray-400 group-hover/item:text-black ">
                   {post.title}
                 </div>
