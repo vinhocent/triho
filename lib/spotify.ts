@@ -6,7 +6,7 @@ const client_id = "ece9a0b860ed40238b8284e455de2d32";
 const client_secret = "ed1132dc52e74ce0b7b3847a05f35453";
 // const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
 const refresh_token =
-  "AQC26VuI0l6mYRyXnEBEjzBjkbFXhqSrTOOkAzK3rYOYP4PpKMs2qKorV6Hx8gr3067lhwlVm3FH6DeYOu3l5UW6dufPcFAwHUZAGnxBagKRLpIGHGT_zyDeqhOfIMDYuJU";
+  "AQDoxqUkJqxNKlVR1uoauUo-BjVmqnV8GMvjzY-UAGLGl4cCmFP5Y5Vl1kbnpOsIY9qSotP0LqisZJ9CxU02dL44RKNw-9oQ4WW4aJvOsqNqVAGbWCzNLC-VC8Wj_y8-a68";
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;

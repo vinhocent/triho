@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { animate } from "motion";
 
 import fetcher from "../lib/fetcher";
-import { NowPlayingSong } from "../types/post";
+import { NowPlayingSong, PlayState } from "../types/post";
 
 function AnimatedBars() {
   useEffect(() => {
@@ -79,7 +79,7 @@ export default function NowPlaying() {
 
   return (
     <div className="flex flex-row-reverse items-center sm:flex-row  space-x-0 sm:space-x-2 w-full">
-      {data?.songUrl ? (
+      {data?.songUrl && data?.isPlaying ? (
         <AnimatedBars />
       ) : (
         <svg className="h-4 w-4 ml-auto mt-[-2px]" viewBox="0 0 168 168">
@@ -90,9 +90,9 @@ export default function NowPlaying() {
         </svg>
       )}
       <div className="inline-flex flex-col sm:flex-row w-full max-w-full truncate">
-        {data?.songUrl ? (
+        {data?.songUrl && data?.isPlaying ? (
           <a
-            className="capsize text-gray-500 dark:text-gray-40 hover:dark:text-gray-100 hover:text-gray-800 font-medium  max-w-max ease-in transition-colors duration-200 "
+            className="capsize text-gray-500 dark:text-gray-400 hover:dark:text-gray-100 hover:text-gray-800 font-medium  max-w-max ease-in transition-colors duration-200 "
             href={data.songUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -100,7 +100,7 @@ export default function NowPlaying() {
             {data.title + " - " + data?.artist}
           </a>
         ) : (
-          <p className="capsize text-gray-800 dark:text-gray-200 font-medium">
+          <p className="capsize text-gray-500 dark:text-gray-400 font-medium">
             Not Playing Spotify
           </p>
         )}
