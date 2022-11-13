@@ -8,11 +8,7 @@ import Footer from "../components/footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider
-      enableSystem={true}
-      disableTransitionOnChange
-      attribute="class"
-    >
+    <ThemeProvider enableSystem={true} attribute="class">
       <Header />
       <Component {...pageProps} />
       <Footer />
