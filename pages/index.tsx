@@ -14,21 +14,6 @@ const Home: NextPage = () => {
     setFading(" opacity-100 ease-in ");
   }, []);
 
-  let src;
-  const { resolvedTheme } = useTheme();
-
-  switch (resolvedTheme) {
-    case "dark":
-      src = "/mealt.png";
-      break;
-    case "light":
-      src = "/me.png";
-      break;
-    default:
-      src = "/mikupinkpfp.jpg";
-      break;
-  }
-
   return (
     <div className="px-8">
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
@@ -62,7 +47,22 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className={"duration-800  delay-800 " + fading}>
-            <Image alt="Tri Ho" height={300} width={300} src={src} priority />
+            <Image
+              alt="Tri Ho"
+              height={300}
+              width={300}
+              src="/mealt.png"
+              priority
+              className="dark:inline hidden "
+            />
+            <Image
+              alt="Tri Ho"
+              height={300}
+              width={300}
+              src="/me.png"
+              priority
+              className="dark:hidden"
+            />
           </div>
         </div>
         <div className={"w-full max-w-2xl "}>
