@@ -14,13 +14,13 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
+   
 
-    switch (window.location.hostname) {
-      case "www.triho.dev":
+    if (window.location.hostname.toString() == "localhost"){
         setHeading("Tri Ho");
-      default:
-        setHeading("tr1e_");
+
     }
+
   }, []);
 
   return (
