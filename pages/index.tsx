@@ -16,14 +16,9 @@ const Home: NextPage = () => {
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
 
-    switch (window.location.hostname) {
-      case "www.triho.dev":
-        setHeading("Tri Ho");
-        setSubHeading("CS Student @ UWaterloo");
-
-      default:
-        setHeading("tr1e_");
-        setSubHeading("digital warlord @f0r3st");
+    if (window.location.hostname.toString() == "www.triho.dev") {
+      setHeading("Tri Ho");
+      setSubHeading("CS Student @ UWaterloo");
     }
   }, []);
 
