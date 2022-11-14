@@ -14,10 +14,9 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
-    console.log(window.location.hostname);
 
     switch (window.location.hostname) {
-      case "triho":
+      case "www.triho.dev":
         setHeading("Tri Ho");
       default:
         setHeading("tr1e_");
