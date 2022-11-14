@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 const Home: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
   const [heading, setHeading] = useState("tr1e_");
+  const [subheading, setSubHeading] = useState("digital warlord @f0r3st");
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
@@ -18,8 +19,11 @@ const Home: NextPage = () => {
     switch (window.location.hostname) {
       case "www.triho.dev":
         setHeading("Tri Ho");
+        setSubHeading("CS Student @ UWaterloo");
+
       default:
         setHeading("tr1e_");
+        setSubHeading("digital warlord @f0r3st");
     }
   }, []);
 
@@ -42,7 +46,10 @@ const Home: NextPage = () => {
                 fading
               }
             >
-              digital warlord @f0r3st
+              {subheading}
+              <span className="mx-2 text-xs md:inline-block p-1 rounded  bg-amber-100 dark:bg-gray-800 transition-all duration-300">
+                he/they
+              </span>
             </h2>
             <p
               className={
