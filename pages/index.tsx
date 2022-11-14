@@ -11,13 +11,11 @@ import { useRouter } from "next/router";
 const Home: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
   const [heading, setHeading] = useState("tr1e_");
-  const [hostname, setHostname] = useState("");
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
-    setHostname(window.location.hostname);
-    console.log(hostname);
-    switch (hostname) {
+
+    switch (window.location.hostname) {
       case "triho":
         setHeading("Tri Ho");
       default:
