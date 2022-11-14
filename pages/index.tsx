@@ -14,6 +14,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
+    console.log(window.location.hostname);
 
     switch (window.location.hostname) {
       case "triho":
