@@ -1,17 +1,27 @@
-import Head from "next/head";
+import Head, { defaultHead } from "next/head";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import type { NextPage } from "next";
+import { useRouter } from "next/router";
 
 // props type
 
 const Home: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
+  const hostname = process.env.VERCEL_URL;
+  console.log(hostname);
+  const [heading, setHeading] = useState("tr1e_");
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
+    switch (hostname) {
+      case "triho":
+        setHeading("Tri Ho");
+      default:
+        setHeading("tr1e_");
+    }
   }, []);
 
   return (
@@ -25,7 +35,7 @@ const Home: NextPage = () => {
                 fading
               }
             >
-              tr1e_
+              {heading}
             </h1>
             <h2
               className={
