@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
-  const hostname = process.env.VERCEL_URL;
+  const hostname = process.env.NEXT_PUBLIC_VERCEL_URL;
   console.log(hostname);
   const [heading, setHeading] = useState("tr1e_");
 
