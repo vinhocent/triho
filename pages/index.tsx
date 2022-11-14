@@ -16,7 +16,7 @@ const Home: NextPage = () => {
     setFading(" opacity-100 ease-in ");
    
 
-    if (window.location.hostname.toString() == "localhost"){
+    if (window.location.hostname.toString() == "www.triho.dev"){
         setHeading("Tri Ho");
 
     }
