@@ -18,7 +18,6 @@ const Home: NextPage = () => {
 
     if (window.location.hostname.toString() == "www.triho.dev"){
         setHeading("Tri Ho");
-
     }
 
   }, []);
