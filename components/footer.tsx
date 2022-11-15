@@ -39,40 +39,40 @@ const Footer = () => {
             href="/"
             className="text-gray-500 hover:text-gray-600 transition"
           >
-            Home
-          </Link>
-          <Link
-            href="/"
-            className="text-gray-500 hover:text-gray-600 transition"
-          >
             About
           </Link>
           <Link
-            href="/"
+            href="/writing"
             className="text-gray-500 hover:text-gray-600 transition"
           >
-            Link
+            Writing
+          </Link>
+          <Link
+            href="/art"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Art
           </Link>
         </div>
         <div className="flex flex-col space-y-4"></div>
         <div className="flex flex-col space-y-4">
           <Link
-            href="/"
+            href="https://github.com/Vinhocent"
             className="text-gray-500 hover:text-gray-600 transition"
           >
-            Link
+            Github
           </Link>
           <Link
-            href="/"
+            href="https://twitter.com/Vinhocent"
             className="text-gray-500 hover:text-gray-600 transition"
           >
-            Link
+            Twitter
           </Link>
           <Link
-            href="/404"
+            href="https://www.linkedin.com/in/tri-ho/"
             className="text-gray-500 hover:text-gray-600 transition"
           >
-            404
+            Linkedin
           </Link>
         </div>
       </div>
