@@ -56,24 +56,27 @@ const Footer = () => {
         </div>
         <div className="flex flex-col space-y-4"></div>
         <div className="flex flex-col space-y-4">
-          <Link
-            href="https://github.com/Vinhocent"
+          <a
             className="text-gray-500 hover:text-gray-600 transition"
+            href="https://www.Github.com/vinhocent"
+            target="_blank"
           >
             Github
-          </Link>
-          <Link
-            href="https://twitter.com/Vinhocent"
+          </a>
+          <a
             className="text-gray-500 hover:text-gray-600 transition"
+            href="https://www.twitter.com/vinhocent"
+            target="_blank"
           >
             Twitter
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/tri-ho/"
+          </a>
+          <a
             className="text-gray-500 hover:text-gray-600 transition"
+            href="https://www.linkedin.com/in/tri-ho/"
+            target="_blank"
           >
             Linkedin
-          </Link>
+          </a>
         </div>
       </div>
     </footer>
