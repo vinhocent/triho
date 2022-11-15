@@ -60,6 +60,7 @@ const Footer = () => {
             className="text-gray-500 hover:text-gray-600 transition"
             href="https://www.Github.com/vinhocent"
             target="_blank"
+            rel="noreferrer noopener "
           >
             Github
           </a>
@@ -67,6 +68,7 @@ const Footer = () => {
             className="text-gray-500 hover:text-gray-600 transition"
             href="https://www.twitter.com/vinhocent"
             target="_blank"
+            rel="noreferrer noopener "
           >
             Twitter
           </a>
@@ -74,6 +76,7 @@ const Footer = () => {
             className="text-gray-500 hover:text-gray-600 transition"
             href="https://www.linkedin.com/in/tri-ho/"
             target="_blank"
+            rel="noreferrer noopener "
           >
             Linkedin
           </a>
