@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               }
             >
               {subheading}
-              <span className="mx-2 text-xs md:inline-block p-1 rounded text-gray-500 dark:text-gray-400 bg-amber-100 dark:bg-gray-900 transition-all duration-300">
+              <span className="mx-2 text-xs md:inline-block p-1 rounded text-gray-500 dark:text-gray-400 bg-amber-100 dark:bg-gray-900">
                 he/they
               </span>
             </h2>
