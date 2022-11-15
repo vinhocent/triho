@@ -101,7 +101,7 @@ export default function NowPlaying() {
           </a>
         ) : (
           <p className="capsize text-gray-500 dark:text-gray-400 font-medium">
-            What I`&aposm Listening To
+            What I&apos;m Listening To
           </p>
         )}
       </div>
