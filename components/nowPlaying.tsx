@@ -101,7 +101,7 @@ export default function NowPlaying() {
           </a>
         ) : (
           <p className="capsize text-gray-500 dark:text-gray-400 font-medium">
-            Not Playing Spotify
+            What I'm Listening To
           </p>
         )}
       </div>
