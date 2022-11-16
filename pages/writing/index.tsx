@@ -30,7 +30,7 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
         >
           writing
           <a
-            href={process.env.NEXT_PUBLIC_VERCEL_URL + "/rss.xml"}
+            href="/rss.xml"
             rel="noreferrer"
             target="_blank"
             className="px-3 my-4 "
