@@ -4,7 +4,7 @@ import { getAllPosts } from "../lib/mdx";
 import fs from "fs";
 
 export default async function generateRssFeed() {
-  let site_url = process.env.NEXT_PUBLIC_VERCEL_URL;
+  let site_url = "https://www.triho.dev";
   const allposts = getAllPosts(["title", "slug", "date", "description"]);
   if (typeof site_url !== "string") {
     site_url = "localhost:3000";
@@ -25,7 +25,7 @@ export default async function generateRssFeed() {
     feed.item({
       title: post.title,
       description: post.description,
-      url: `${site_url}/blog/${post.slug}`,
+      url: `${site_url}/writing/${post.slug}`,
       date: post.date,
     });
   });
