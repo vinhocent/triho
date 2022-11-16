@@ -24,6 +24,19 @@ const Home: NextPage = () => {
 
   return (
     <div className="px-8">
+      <Head>
+        <title>{heading}</title>
+        <meta name="robots" content="follow, index" />
+        <meta content={subheading} name="description" />
+        <meta property="og:site_name" content={heading} />
+        <meta property="og:description" content={subheading} />
+        <meta property="og:title" content={heading} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@vinhocent" />
+        <meta name="twitter:title" content={heading} />
+        <meta name="twitter:description" content={subheading} />
+        <link rel="shortcut icon" href="/tr1e.svg" />
+      </Head>
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
         <div className="flex flex-col-reverse sm:flex-row items-start ">
           <div className="flex flex-col pr-8">
