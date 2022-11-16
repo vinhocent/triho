@@ -11,8 +11,8 @@ export default async function generateRssFeed() {
   }
 
   const feedOptions = {
-    title: "Blog posts | RSS Feed",
-    description: "Welcome to this blog posts!",
+    title: "tr1e | RSS Feed",
+    description: "@f0r3st",
     site_url: site_url,
     feed_url: `${site_url}/rss.xml`,
     image_url: `${site_url}/logo.png`,
@@ -24,7 +24,7 @@ export default async function generateRssFeed() {
   allposts.map((post) => {
     feed.item({
       title: post.title,
-      description: post.description,
+      description: post.content,,
       url: `${site_url}/writing/${post.slug}`,
       date: post.date,
     });
