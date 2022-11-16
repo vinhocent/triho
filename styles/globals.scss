@@ -40,3 +40,6 @@ a {
     @apply group-hover:text-gray-500;
   }
 }
+::selection {
+  @apply dark:bg-[#00444e] bg-[#dad3c1];
+}
