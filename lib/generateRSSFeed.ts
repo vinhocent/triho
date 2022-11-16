@@ -5,7 +5,7 @@ import fs from "fs";
 
 export default async function generateRssFeed() {
   let site_url = "https://www." + process.env.NEXT_PUBLIC_VERCEL_URL;
-  const allposts = getAllPosts(["title", "slug", "date", "description"]);
+  const allposts = getAllPosts(["title", "slug", "date", "content"]);
   if (typeof site_url !== "string") {
     site_url = "localhost:3000";
   }
