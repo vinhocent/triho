@@ -2,7 +2,6 @@ import type { NextPage, GetStaticProps } from "next";
 import { IPost } from "../../types/post";
 import Link from "next/link";
 import { getAllPosts } from "../../lib/mdx";
-import { MdRssFeed } from "react-icons/md";
 import generateRssFeed from "../../lib/generateRSSFeed";
 
 import { useState, useEffect } from "react";

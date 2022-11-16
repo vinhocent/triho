@@ -4,8 +4,11 @@ import { getAllPosts } from "../lib/mdx";
 import fs from "fs";
 
 export default async function generateRssFeed() {
-  const site_url = process.env.NEXT_PUBLIC_VERCEL_URL;
+  let site_url = process.env.NEXT_PUBLIC_VERCEL_URL;
   const allposts = getAllPosts(["title", "slug", "date", "description"]);
+  if (typeof site_url !== "string") {
+    site_url = "localhost:3000";
+  }
 
   const feedOptions = {
     title: "Blog posts | RSS Feed",
