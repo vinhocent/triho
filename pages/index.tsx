@@ -9,29 +9,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useRouter } from "next/router";
 
 // props type
-function Box(props) {
-  // This reference will give us direct access to the mesh
-  const mesh = useRef();
-  // Set up state for the hovered and active state
-  const [hovered, setHover] = useState(false);
-  const [active, setActive] = useState(false);
-  // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (mesh.current.rotation.x += 0.01));
-  // Return view, these are regular three.js elements expressed in JSX
-  return (
-    <mesh
-      {...props}
-      ref={mesh}
-      scale={active ? 1.5 : 1}
-      onClick={(event) => setActive(!active)}
-      onPointerOver={(event) => setHover(true)}
-      onPointerOut={(event) => setHover(false)}
-    >
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
-    </mesh>
-  );
-}
 
 const Home: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
@@ -46,6 +23,31 @@ const Home: NextPage = () => {
       setSubHeading("CS Student @ UWaterloo");
     }
   }, []);
+
+  function Box(props: any) {
+    // This reference gives us direct access to the THREE.Mesh object
+    // Hold state for hovered and clicked events
+    const [hovered, hover] = useState(false);
+    // Subscribe this component to the render-loop, rotate the mesh every frame
+    const ref = useRef<THREE.Mesh>();
+
+    useFrame(() => {
+      ref.current!.rotation.x += 0.005;
+      ref.current!.rotation.y += 0.005;
+    });
+    // Return the view, these are regular Threejs elements expressed in JSX
+    return (
+      <mesh
+        {...props}
+        ref={ref}
+        onPointerOver={(event) => hover(true)}
+        onPointerOut={(event) => hover(false)}
+      >
+        <boxGeometry args={[5, 5, 5]} />
+        <meshStandardMaterial color={hovered ? "aqua" : "orange"} />
+      </mesh>
+    );
+  }
 
   return (
     <div className="px-8">
@@ -245,7 +247,13 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className={css.scene + " w-full max-w-2xl "}>
+        <div
+          className={
+            css.scene +
+            " w-full max-w-2xl transition-opacity delay-1100 duration-600" +
+            fading
+          }
+        >
           <Canvas
             shadows={true}
             className={""}
@@ -255,8 +263,7 @@ const Home: NextPage = () => {
           >
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
-            <Box position={[-1.2, 0, 0]} />
-            <Box position={[1.2, 0, 0]} />
+            <Box position={[0, 0, 0]} />
           </Canvas>
         </div>
       </div>
