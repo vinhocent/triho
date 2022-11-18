@@ -2,8 +2,10 @@ import Head, { defaultHead } from "next/head";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import styles from "../styles/Home.module.css";
+import css from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import type { NextPage } from "next";
+import { Canvas } from "@react-three/fiber";
 import { useRouter } from "next/router";
 
 // props type
@@ -219,6 +221,17 @@ const Home: NextPage = () => {
               </ul>
             </div>
           </div>
+        </div>
+        <div className={css.scene + " flex mx-auto  max-w-2xl"}>
+          <Canvas
+            shadows={true}
+            className={css.canvas}
+            camera={{
+              position: [-6, 7, 7],
+            }}
+          >
+            {" "}
+          </Canvas>
         </div>
       </div>
     </div>
