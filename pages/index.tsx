@@ -3,12 +3,35 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import styles from "../styles/Home.module.css";
 import css from "../styles/Home.module.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { NextPage } from "next";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { useRouter } from "next/router";
 
 // props type
+function Box(props) {
+  // This reference will give us direct access to the mesh
+  const mesh = useRef();
+  // Set up state for the hovered and active state
+  const [hovered, setHover] = useState(false);
+  const [active, setActive] = useState(false);
+  // Subscribe this component to the render-loop, rotate the mesh every frame
+  useFrame((state, delta) => (mesh.current.rotation.x += 0.01));
+  // Return view, these are regular three.js elements expressed in JSX
+  return (
+    <mesh
+      {...props}
+      ref={mesh}
+      scale={active ? 1.5 : 1}
+      onClick={(event) => setActive(!active)}
+      onPointerOver={(event) => setHover(true)}
+      onPointerOut={(event) => setHover(false)}
+    >
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
+    </mesh>
+  );
+}
 
 const Home: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
@@ -91,7 +114,7 @@ const Home: NextPage = () => {
             />
           </div>
         </div>
-        <div className={"w-full max-w-2xl "}>
+        <div className={"w-full max-w-2xl  "}>
           <p
             className={
               "text-gray-600 font-semibold text-xl dark:text-gray-400 break-all mb-6 transition-opacity duration-600   delay-700 " +
@@ -222,15 +245,18 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className={css.scene + " flex mx-auto  max-w-2xl"}>
+        <div className={css.scene + " w-full max-w-2xl "}>
           <Canvas
             shadows={true}
-            className={css.canvas}
+            className={""}
             camera={{
               position: [-6, 7, 7],
             }}
           >
-            {" "}
+            <ambientLight />
+            <pointLight position={[10, 10, 10]} />
+            <Box position={[-1.2, 0, 0]} />
+            <Box position={[1.2, 0, 0]} />
           </Canvas>
         </div>
       </div>

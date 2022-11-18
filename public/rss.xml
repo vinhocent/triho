@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[tr1e | RSS Feed]]></title>
+        <description><![CDATA[@f0r3st]]></description>
+        <link>https://www.triho.dev</link>
+        <image>
+            <url>https://www.triho.dev/logo.png</url>
+            <title>tr1e | RSS Feed</title>
+            <link>https://www.triho.dev</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Fri, 18 Nov 2022 04:59:15 GMT</lastBuildDate>
+        <atom:link href="https://www.triho.dev/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 18 Nov 2022 04:59:15 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2022, Ibas]]></copyright>
+        <item>
+            <title><![CDATA[BlogTESTRSSS322222 tes]]></title>
+            <description><![CDATA[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 10</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 10</guid>
+            <pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[BlogTESTRSSS322222 tessdsdsdsdsdsdstetesssssss]]></title>
+            <description><![CDATA[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 11</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 11</guid>
+            <pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Yupdsdsdsdstetesssssss]]></title>
+            <description><![CDATA[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 12</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 12</guid>
+            <pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[BlogTESTRSSS3]]></title>
+            <description><![CDATA[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 9</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 9</guid>
+            <pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[winding]]></title>
+            <description><![CDATA[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+
+]]></description>
+            <link>https://www.triho.dev/writing/newblog</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/newblog</guid>
+            <pubDate>Sun, 13 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Robster]]></title>
+            <description><![CDATA[
+LoreRobldemgaem ipsum dolor sit amet, sadasdasdaconsectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+sd
+]]></description>
+            <link>https://www.triho.dev/writing/robbbie</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/robbbie</guid>
+            <pubDate>Sat, 12 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Aarr]]></title>
+            <description><![CDATA[
+
+Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+
+]]></description>
+            <link>https://www.triho.dev/writing/a</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/a</guid>
+            <pubDate>Fri, 11 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Blog One]]></title>
+            <description><![CDATA[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 2</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 2</guid>
+            <pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Blog Two]]></title>
+            <description><![CDATA[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 3</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 3</guid>
+            <pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Blog 3]]></title>
+            <description><![CDATA[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 4</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 4</guid>
+            <pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Blog 4]]></title>
+            <description><![CDATA[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 5</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 5</guid>
+            <pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Blog 5]]></title>
+            <description><![CDATA[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 6</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 6</guid>
+            <pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Blog 6]]></title>
+            <description><![CDATA[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 7</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 7</guid>
+            <pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Blog 7]]></title>
+            <description><![CDATA[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+
+]]></description>
+            <link>https://www.triho.dev/writing/test copy 8</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/test copy 8</guid>
+            <pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
