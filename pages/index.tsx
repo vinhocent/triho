@@ -3,12 +3,42 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import styles from "../styles/Home.module.css";
 import css from "../styles/Home.module.css";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import type { NextPage } from "next";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useRouter } from "next/router";
+import { OrbitControls, useCursor } from "@react-three/drei";
+import { AsciiEffect } from "three-stdlib";
 
 // props type
+
+function Torusknot(props: any) {
+  const { size, gl, scene, camera } = useThree();
+  const renderIndex = 1;
+  const characters = " .:-+*=%@#";
+  const options = { invert: true };
+
+  const ref = useRef<THREE.Mesh>();
+  const [clicked, click] = useState(false);
+  const [hovered, hover] = useState(false);
+  useCursor(hovered);
+  useFrame((state, delta) => {
+    ref.current!.rotation.x = ref.current!.rotation.y += delta / 2;
+  });
+  return (
+    <mesh
+      {...props}
+      ref={ref}
+      scale={1}
+      onPointerOver={() => hover(true)}
+      onPointerOut={() => hover(false)}
+    >
+      <torusKnotGeometry args={[1, 0.2, 30, 7, 10]} />
+
+      <meshToonMaterial color="aqua" />
+    </mesh>
+  );
+}
 
 const Home: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
@@ -23,31 +53,6 @@ const Home: NextPage = () => {
       setSubHeading("CS Student @ UWaterloo");
     }
   }, []);
-
-  function Box(props: any) {
-    // This reference gives us direct access to the THREE.Mesh object
-    // Hold state for hovered and clicked events
-    const [hovered, hover] = useState(false);
-    // Subscribe this component to the render-loop, rotate the mesh every frame
-    const ref = useRef<THREE.Mesh>();
-
-    useFrame(() => {
-      ref.current!.rotation.x += 0.005;
-      ref.current!.rotation.y += 0.005;
-    });
-    // Return the view, these are regular Threejs elements expressed in JSX
-    return (
-      <mesh
-        {...props}
-        ref={ref}
-        onPointerOver={(event) => hover(true)}
-        onPointerOut={(event) => hover(false)}
-      >
-        <boxGeometry args={[5, 5, 5]} />
-        <meshStandardMaterial color={hovered ? "aqua" : "orange"} />
-      </mesh>
-    );
-  }
 
   return (
     <div className="px-8">
@@ -250,20 +255,17 @@ const Home: NextPage = () => {
         <div
           className={
             css.scene +
-            " w-full max-w-2xl transition-opacity delay-1100 duration-600" +
+            " w-full max-w-2xl transition-opacity delay-1100 duration-600 py-5" +
             fading
           }
         >
-          <Canvas
-            shadows={true}
-            className={""}
-            camera={{
-              position: [-6, 7, 7],
-            }}
-          >
-            <ambientLight />
-            <pointLight position={[10, 10, 10]} />
-            <Box position={[0, 0, 0]} />
+          <Canvas>
+            {/* <color transparent attach="background" args={[bgColour]} /> */}
+
+            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+            <pointLight position={[-10, -10, -10]} />
+            <Torusknot />
+            <OrbitControls />
           </Canvas>
         </div>
       </div>
