@@ -25,7 +25,7 @@ const Code = (props: any) => {
 
   return (
     <div
-      className="bg-gray-900 rounded-lg"
+      className="bg-gray-900 border dark:border-white border-black rounded-lg"
       style={{
         marginTop: "2rem",
         marginBottom: "2rem",
