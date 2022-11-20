@@ -72,7 +72,6 @@ const Code = (props: any) => {
             cursor: "pointer",
             color: "#E2E8F0",
             fontSize: "14px",
-            fontFamily: "sans-serif",
             lineHeight: "1",
           }}
         >
