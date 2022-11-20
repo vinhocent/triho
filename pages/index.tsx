@@ -13,6 +13,7 @@ import { AsciiEffect } from "three-stdlib";
 // props type
 
 function Torusknot(props: any) {
+  const { resolvedTheme } = useTheme();
   const { size, gl, scene, camera } = useThree();
   const renderIndex = 1;
   const characters = " .:-+*=%@#";
@@ -35,7 +36,7 @@ function Torusknot(props: any) {
     >
       <torusKnotGeometry args={[1, 0.2, 30, 7, 10]} />
 
-      <meshToonMaterial color="aqua" />
+      <meshToonMaterial color={resolvedTheme === "dark" ? "aqua" : "coral"} />
     </mesh>
   );
 }
