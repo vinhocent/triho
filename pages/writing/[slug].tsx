@@ -7,6 +7,10 @@ import { IPost } from "../../types/post";
 import { getPost, getAllPosts } from "../../lib/mdx";
 import { ParsedUrlQuery } from "querystring";
 import Head, { defaultHead } from "next/head";
+import Image from "next/image";
+import Highlight, { defaultProps } from "prism-react-renderer";
+import theme from "prism-react-renderer/themes/nightOwl";
+import Code from "../../components/codeBlock";
 
 // props type
 type Props = {
@@ -15,6 +19,10 @@ type Props = {
 };
 
 // components to render
+const components = {
+  pre: (props: any) => <Code {...props} />,
+  Image,
+};
 
 const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
@@ -23,15 +31,13 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
-    setHeading("Tri Ho");
-    setSubHeading("CS Student @ UWaterloo");
   }, []);
 
   // get setters
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 px-8 sm:px-0 mx-auto pb-12">
       <Head>
-        <title>{heading + frontMatter.title}</title>
+        <title>{heading + " " + frontMatter.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={subheading} name="description" />
         <meta property="og:site_name" content={heading + frontMatter.title} />
@@ -41,7 +47,7 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
         <meta name="twitter:site" content="@vinhocent" />
         <meta name="twitter:title" content={heading + frontMatter.title} />
         <meta name="twitter:description" content={subheading} />
-        <link rel="shortcut icon" href="/public/tr1e.svg" />
+        <link rel="shortcut icon" href="/tr1e.svg" />
       </Head>
       <h1
         className={
@@ -81,7 +87,7 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
           <span className=" flex  w-full border-t opacity-60 dark:border-gray-500 my-6 self-end shrink border-gray-400"></span>
         </ul>
         <div className={"transition-opacity delay-1200 duration-600" + fading}>
-          <MDXRemote {...source} />
+          <MDXRemote components={components} {...source} />
         </div>
       </div>
     </div>
