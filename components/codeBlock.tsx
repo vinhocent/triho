@@ -98,6 +98,7 @@ const Code = (props: any) => {
             >
               {tokens.map((line, i) => (
                 <div
+                  key={i}
                   {...getLineProps({ line, key: i })}
                   style={{
                     background: "transparent",
