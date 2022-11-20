@@ -60,7 +60,7 @@ const Home: NextPage = () => {
               }
             >
               {subheading}
-              <span className="mx-2 text-xs md:inline-block p-1 rounded text-gray-500 dark:text-gray-400 bg-amber-100 dark:bg-gray-900">
+              <span className="mx-2 text-xs md:inline-block p-1 rounded text-gray-500 dark:text-gray-400 bg-amber-100 dark:bg-gray-900 transition-colors duration-200">
                 he/they
               </span>
             </h2>
@@ -238,7 +238,7 @@ const Home: NextPage = () => {
             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
             <pointLight position={[-10, -10, -10]} />
             <TorusKnot />
-            <OrbitControls />
+            <OrbitControls minDistance={2} maxDistance={4} />
           </Canvas>
         </div>
       </div>

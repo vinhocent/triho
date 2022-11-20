@@ -9,9 +9,9 @@
             <link>https://www.triho.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 20 Nov 2022 19:15:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Nov 2022 23:25:18 GMT</lastBuildDate>
         <atom:link href="https://www.triho.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 20 Nov 2022 19:15:36 GMT</pubDate>
+        <pubDate>Sun, 20 Nov 2022 23:25:18 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2022, Ibas]]></copyright>
         <item>
             <title><![CDATA[BlogTESTRSSS322222 tes]]></title>
@@ -68,6 +68,7 @@ src="/mikupinkpfp.jpg"
 
 >
 
+</img>
 ```js file=src/components/button.js
 <button
   onClick={() => {
