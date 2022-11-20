@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <style>
           @import
-          url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+          url(&apos;https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap&apos;);
         </style>
       </Head>
       <Component {...pageProps} />
