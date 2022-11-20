@@ -5,12 +5,20 @@ import { useTheme, ThemeProvider } from "next-themes";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
       <Header />
+      <Head>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+        </style>
+      </Head>
       <Component {...pageProps} />
+
       <Footer />
     </ThemeProvider>
   );

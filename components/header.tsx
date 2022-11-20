@@ -11,19 +11,19 @@ const tabsData = [
     label: "about",
     href: "/",
     left: -10,
-    width: 65,
+    width: 70,
   },
   {
     label: "writing",
     href: "/writing",
-    left: 55,
-    width: 75,
+    left: 65,
+    width: 85,
   },
   {
     label: "other",
     href: "/",
-    left: 130,
-    width: 60,
+    left: 155,
+    width: 70,
   },
 ];
 
