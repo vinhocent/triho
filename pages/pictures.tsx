@@ -42,7 +42,7 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
             <div className="flex flex-wrap -m-1 md:-m-2">
               <div className="flex ">
                 {posts.map((post, i) => (
-                  <li className="w-1/3 p-1 md:p-2">
+                  <li key={i} className="w-1/3 p-1 md:p-2">
                     <Image
                       alt="image"
                       height={300}
