@@ -60,7 +60,7 @@ const Code = (props: any) => {
                   setIsCopied(true);
                   setTimeout(() => setIsCopied(false), 1500);
                 }}
-                className="float-right opacity-0 group-hover:opacity-100 bg-amber-50 dark:bg-zinc-700 transition-all  ease-in-out delay-150  hover:scale-110 hover:bg-indigo-500 duration-300"
+                className="float-right opacity-0 group-hover:opacity-100 bg-amber-50 dark:bg-zinc-700 transition-all  ease-in-out delay-150  hover:scale-110 dark:hover:bg-indigo-500 hover:bg-amber-500 duration-300"
                 style={{
                   marginRight: "1.5rem",
                   padding: "8px 12px",

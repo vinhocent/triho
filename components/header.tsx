@@ -20,10 +20,10 @@ const tabsData = [
     width: 85,
   },
   {
-    label: "other",
-    href: "/other",
+    label: "pictures",
+    href: "/pictures",
     left: 155,
-    width: 70,
+    width: 100,
   },
 ];
 

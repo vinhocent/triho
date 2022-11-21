@@ -48,10 +48,10 @@ const Footer = () => {
             Writing
           </Link>
           <Link
-            href="/other"
+            href="/pictures"
             className="text-gray-500 hover:text-gray-600 transition"
           >
-            Other
+            Pictures
           </Link>
         </div>
         <div className="flex flex-col space-y-4"></div>
