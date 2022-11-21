@@ -7,10 +7,13 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import type { NextPage } from "next";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useRouter } from "next/router";
+import { OrbitControls, useCursor } from "@react-three/drei";
+import { AsciiEffect } from "three-stdlib";
+import TorusKnot from "../components/torusKnot";
 
 // props type
 
-const Other: NextPage = () => {
+const Home: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
   const [heading, setHeading] = useState("tr1e_");
   const [subheading, setSubHeading] = useState("digital warlord @f0r3st");
@@ -26,19 +29,6 @@ const Other: NextPage = () => {
 
   return (
     <div className="px-8">
-      <Head>
-        <title>{heading}</title>
-        <meta name="robots" content="follow, index" />
-        <meta content={subheading} name="description" />
-        <meta property="og:site_name" content={heading} />
-        <meta property="og:description" content={subheading} />
-        <meta property="og:title" content={heading} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@vinhocent" />
-        <meta name="twitter:title" content={heading} />
-        <meta name="twitter:description" content={subheading} />
-        <link rel="shortcut icon" href="/tr1e.svg" />
-      </Head>
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
         <div className={"w-full max-w-2xl  "}>
           <p
@@ -62,11 +52,16 @@ const Other: NextPage = () => {
                     KBDFANS D65
                   </div>
                   <span className="dark:text-gray-400  text-gray-600 text-sm ">
-                    Gateron Black Inks + EPBT Kuro Shiro
+                    + Gateron Black Inks + EPBT Kuro Shiro
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
+
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                  Keyboard
+                </span>
               </ul>
+
               <ul
                 className={
                   "flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600" +
@@ -78,11 +73,16 @@ const Other: NextPage = () => {
                     Logitech GPRO Wireless
                   </div>
                   <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
-                    + Esports Tiger Ice Feet
+                    + Tiger Ice Skates
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
+
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                  Mouse
+                </span>
               </ul>
+
               <ul
                 className={"list-none transition-opacity duration-600" + fading}
               >
@@ -96,4 +96,4 @@ const Other: NextPage = () => {
   );
 };
 
-export default Other;
+export default Home;
