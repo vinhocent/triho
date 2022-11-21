@@ -25,11 +25,11 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
       <div className=" flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
         <h1
           className={
-            "font-bold text-3xl md:text-5xl tracking-tight mb-1 flex text-black dark:text-white transition-opacity duration-600 " +
+            "font-bold text-3xl md:text-5xl tracking-tight mb-4 flex text-black dark:text-white transition-opacity duration-600 " +
             fading
           }
         >
-          Pictures
+          pictures
         </h1>
 
         <section
