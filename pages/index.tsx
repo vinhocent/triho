@@ -66,13 +66,24 @@ const Home: NextPage = () => {
             </h2>
             <p
               className={
-                "text-gray-600 dark:text-gray-400 mb-16 break-normal transition-opacity duration-600   delay-700 " +
+                "text-gray-600 dark:text-gray-400 mb-2 break-normal transition-opacity duration-600   delay-700 " +
                 fading
               }
             >
-              {
-                "I'm a student studying Computer Science. What do I do? I am not sure haha? I love learning thats for sure."
+              Hello! I'm a developer/learner/terminal-enjoyer studying Computer
+              Science.
+            </p>
+            <p
+              className={
+                "text-gray-600 dark:text-gray-400 mb-12 break-normal transition-opacity duration-600   delay-700 " +
+                fading
               }
+            >
+              I love building unique{" "}
+              <span className="">{" user experiences"}</span>
+              {", "}
+              <span className="">open-source development</span> {" and "}
+              <span className="">cli applications</span>.
             </p>
           </div>
           <div className={"duration-800  delay-800 " + fading}>
