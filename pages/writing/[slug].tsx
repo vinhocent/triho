@@ -36,19 +36,10 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
   // get setters
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 px-8 sm:px-0 mx-auto pb-12">
-      <Head>
-        <title>{heading + " " + frontMatter.title}</title>
-        <meta name="robots" content="follow, index" />
-        <meta content={subheading} name="description" />
-        <meta property="og:site_name" content={heading + frontMatter.title} />
-        <meta property="og:description" content={subheading} />
-        <meta property="og:title" content={heading + frontMatter.title} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@vinhocent" />
-        <meta name="twitter:title" content={heading + frontMatter.title} />
-        <meta name="twitter:description" content={subheading} />
-        <link rel="shortcut icon" href="/tr1e.svg" />
-      </Head>
+      <head>
+        <title>{frontMatter.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </head>
       <h1
         className={
           "font-bold text-2xl md:text-4xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-600 " +

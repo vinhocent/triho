@@ -15,33 +15,13 @@ type Props = {
 // component render function
 const Blog: NextPage<Props> = ({ posts }: Props) => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
-  const [heading, setHeading] = useState("tr1e_");
-  const [subheading, setSubHeading] = useState("digital warlord @f0r3st");
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
-
-    if (window.location.hostname.toString() == "www.triho.dev") {
-      setHeading("Tri Ho");
-      setSubHeading("CS Student @ UWaterloo");
-    }
   }, []);
 
   return (
     <div className="px-8 ">
-      <Head>
-        <title>{heading + " Blog"}</title>
-        <meta name="robots" content="follow, index" />
-        <meta content={subheading} name="description" />
-        <meta property="og:site_name" content={heading + " Blog"} />
-        <meta property="og:description" content={subheading} />
-        <meta property="og:title" content={heading + " Blog"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@vinhocent" />
-        <meta name="twitter:title" content={heading + " Blog"} />
-        <meta name="twitter:description" content={subheading} />
-        <link rel="shortcut icon" href="/tr1e.svg" />
-      </Head>
       <div className=" flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
         <h1
           className={
