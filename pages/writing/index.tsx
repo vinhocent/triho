@@ -13,7 +13,7 @@ type Props = {
 };
 
 // component render function
-const Home: NextPage<Props> = ({ posts }: Props) => {
+const Blog: NextPage<Props> = ({ posts }: Props) => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
   const [heading, setHeading] = useState("tr1e_");
   const [subheading, setSubHeading] = useState("digital warlord @f0r3st");
@@ -105,7 +105,7 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
   );
 };
 
-export default Home;
+export default Blog;
 
 // get posts from serverside at build time
 export const getStaticProps: GetStaticProps = async () => {

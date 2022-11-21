@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 
 // props type
 
-const Home: NextPage = () => {
+const Other: NextPage = () => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
   const [heading, setHeading] = useState("tr1e_");
   const [subheading, setSubHeading] = useState("digital warlord @f0r3st");
@@ -96,4 +96,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Other;
