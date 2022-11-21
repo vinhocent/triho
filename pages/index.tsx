@@ -70,8 +70,9 @@ const Home: NextPage = () => {
                 fading
               }
             >
-              Hello! I'm a developer/learner/terminal-enjoyer studying Computer
-              Science.
+              {
+                "Hello! I'm a developer/learner/terminal-enjoyer studying Computer Science."
+              }
             </p>
             <p
               className={
