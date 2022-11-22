@@ -30,7 +30,7 @@ const Code = (props: any) => {
 
   return (
     <div
-      className="dark:bg-zinc-900 bg-amber-100 border dark:border-white rounded-sm"
+      className="dark:bg-zinc-900 bg-amber-100 border dark:border-gray-500 rounded-sm"
       style={{
         marginTop: "2rem",
         marginBottom: "2rem",
