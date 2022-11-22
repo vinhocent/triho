@@ -4,7 +4,6 @@ import Link from "next/link";
 import { getAllPosts } from "../lib/art";
 import Head, { defaultHead } from "next/head";
 import Image from "next/image";
-
 import { useState, useEffect } from "react";
 
 // props type
@@ -39,14 +38,14 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
           }
         >
           <div className="container mx-auto ">
-            <div className="flex flex-wrap -m-1 md:-m-2">
-              <div className="flex ">
+            <div className="  -m-1 md:-m-2">
+              <div className="grid  grid-cols-3 grid-rows-2 ">
                 {posts.map((post, i) => (
-                  <li key={i} className="w-1/3 p-1 md:p-2">
+                  <li key={i} className="list-none  p-1 md:p-2">
                     <Image
                       alt="image"
-                      height={300}
-                      width={300}
+                      width={10000}
+                      height={1000}
                       className="block object-cover object-center w-full h-full rounded-lg"
                       src={post.thumbnail}
                       priority
