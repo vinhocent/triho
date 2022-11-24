@@ -116,7 +116,7 @@ const Home: NextPage = () => {
             {"Where I've Been"}
           </p>
           <div className="flex flex-col  gap-y-8">
-            <div className="   items-center flex-col">
+            <div id={"blogs"} className="   items-center flex-col">
               <ul
                 className={
                   "flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600" +
