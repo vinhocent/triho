@@ -27,14 +27,16 @@ a {
   }
 }
 
-@for $i from 1 through 50 {
-  li:nth-child(#{$i}n) {
-    transition-delay: #{$i * 100 + 500}ms;
+#blogs {
+  @for $i from 1 through 50 {
+    li:nth-child(#{$i}n) {
+      transition-delay: #{$i * 100 + 500}ms;
+    }
   }
-}
-@for $i from 1 through 50 {
-  ul:nth-child(#{$i}n) {
-    transition-delay: #{$i * 100 + 700}ms;
+  @for $i from 1 through 50 {
+    ul:nth-child(#{$i}n) {
+      transition-delay: #{$i * 100 + 700}ms;
+    }
   }
 }
 
@@ -48,7 +50,7 @@ a {
 }
 
 blockquote {
-  @apply border-l-4;
+  @apply border-l-4 dark:border-white border-black;
 }
 
 blockquote {
@@ -67,12 +69,11 @@ article {
   li,
   ol,
   ul {
-    color: var(--gray);
-    fill: var(--gray);
     font-weight: revert;
     margin: revert;
     padding: revert;
     list-style: hiragana;
+    transition-delay: 0ms;
   }
 
   h1,
@@ -82,14 +83,9 @@ article {
   h5,
   h6,
   thead {
-    color: var(--dark);
     font-weight: revert;
     margin: 2rem 0 0;
     padding: 2rem auto 1rem;
-
-    &:hover > .hanchor {
-      color: var(--secondary);
-    }
   }
   & > h1 {
     margin-top: 2em;
@@ -106,7 +102,6 @@ article {
 
     &.internal-link {
       text-decoration: none;
-      background-color: transparentize(#8f9fa9, 0.85);
       padding: 0 0.1em;
       margin: auto -0.1em;
       border-radius: 3px;

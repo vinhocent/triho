@@ -36,43 +36,45 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
   // get setters
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 px-8 sm:px-0 mx-auto pb-12">
-      <h1
-        className={
-          "font-bold text-2xl md:text-4xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-600 " +
-          fading
-        }
-      >
-        {frontMatter.title}
-      </h1>
       <div
         className={
           " flex-col items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-2 pb-8 "
         }
       >
-        <ul
-          className={
-            " flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600 " +
-            fading
-          }
-        >
-          <div className="dark:text-white text-gray-800 ">
-            {frontMatter.date}
-          </div>
-        </ul>
+        <div id={"blogs"}>
+          <h1
+            className={
+              "font-bold text-2xl md:text-4xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-600 " +
+              fading
+            }
+          >
+            {frontMatter.title}
+          </h1>
+          <ul
+            className={
+              " flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600 " +
+              fading
+            }
+          >
+            <div className="dark:text-white text-gray-800 ">
+              {frontMatter.date}
+            </div>
+          </ul>
 
-        <ul
-          className={
-            " flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600 " +
-            fading
-          }
-        >
-          <div className="dark:text-white text-gray-800 ">
-            {frontMatter.description}
-          </div>
-        </ul>
-        <ul className={"transition-opacity duration-600 " + fading}>
-          <span className=" flex  w-full border-t opacity-60 dark:border-gray-500 my-6 self-end shrink border-gray-400"></span>
-        </ul>
+          <ul
+            className={
+              " flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600 " +
+              fading
+            }
+          >
+            <div className="dark:text-white text-gray-800 ">
+              {frontMatter.description}
+            </div>
+          </ul>
+          <ul className={"transition-opacity duration-600 " + fading}>
+            <span className=" flex  w-full border-t opacity-60 dark:border-gray-500 my-6 self-end shrink border-gray-400"></span>
+          </ul>
+        </div>
         <article
           className={"transition-opacity delay-1200 duration-600" + fading}
         >

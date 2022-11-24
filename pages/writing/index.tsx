@@ -51,6 +51,7 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
         </h1>
 
         <div
+          id={"blogs"}
           className={
             "group flex-col items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 "
           }
