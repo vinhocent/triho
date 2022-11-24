@@ -9,12 +9,37 @@
             <link>https://www.triho.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 21 Nov 2022 23:25:54 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Nov 2022 08:25:39 GMT</lastBuildDate>
         <atom:link href="https://www.triho.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 21 Nov 2022 23:25:54 GMT</pubDate>
+        <pubDate>Thu, 24 Nov 2022 08:25:39 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2022, Ibas]]></copyright>
         <item>
             <title><![CDATA[Hello & Welcome]]></title>
+            <description><![CDATA[
+ipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsum
+
+## H1
+
+> quotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquotingquoting
+
+### H1
+
+- **lorem ipsum** ipsum
+
+* **lorem ipsum** ipsum
+
+### H1
+
+- **lorem ipsum** ipsum
+
+* **lorem ipsum** ipsum
+* **lorem ipsum** ipsum
+* **lorem ipsum** ipsum
+
+## H1
+
+- **lorem ipsum** ipsum
+]]></description>
             <link>https://www.triho.dev/writing/helloandwelcome</link>
             <guid isPermaLink="true">https://www.triho.dev/writing/helloandwelcome</guid>
             <pubDate>Mon, 21 Nov 2022 00:00:00 GMT</pubDate>
@@ -22,7 +47,7 @@
         <item>
             <title><![CDATA[winding]]></title>
             <description><![CDATA[
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies lorem ut tincidunt ultricies. Donec fringilla dui et sapien auctor, a feugiat urna vestibulum. Nam vulputate risus vehicula massa mollis dapibus. Quisque id facilisis arcu. Donec convallis at leo eu tincidunt. Pellentesque erat magna, facilisis vitae ipsum ac, pellentesque porta eros. Aenean pulvinar interdum justo quis lacinia. Vestibulum sodales elit vel ante dignissim sagittis.
+**hiraganahiraganahiraganahiraganahiraganahiraganahiraganahiragana** _itaoiccc hiragana_
 
 <Image
   alt="me in red pixels"

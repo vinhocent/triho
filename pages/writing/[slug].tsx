@@ -36,10 +36,6 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
   // get setters
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 px-8 sm:px-0 mx-auto pb-12">
-      <head>
-        <title>{frontMatter.title}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </head>
       <h1
         className={
           "font-bold text-2xl md:text-4xl tracking-tight mb-1 text-black dark:text-white transition-opacity duration-600 " +
@@ -77,9 +73,11 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
         <ul className={"transition-opacity duration-600 " + fading}>
           <span className=" flex  w-full border-t opacity-60 dark:border-gray-500 my-6 self-end shrink border-gray-400"></span>
         </ul>
-        <div className={"transition-opacity delay-1200 duration-600" + fading}>
+        <article
+          className={"transition-opacity delay-1200 duration-600" + fading}
+        >
           <MDXRemote components={components} {...source} />
-        </div>
+        </article>
       </div>
     </div>
   );

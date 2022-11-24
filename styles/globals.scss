@@ -46,3 +46,79 @@ a {
 ::selection {
   @apply dark:bg-[#00444e] bg-[#dad3c1];
 }
+
+blockquote {
+  @apply border-l-4;
+}
+
+blockquote {
+  margin-left: 0em;
+
+  padding-left: 1em;
+  transition: border-color 0.2s ease;
+}
+
+article {
+  p,
+  ul,
+  text,
+  tr,
+  td,
+  li,
+  ol,
+  ul {
+    color: var(--gray);
+    fill: var(--gray);
+    font-weight: revert;
+    margin: revert;
+    padding: revert;
+    list-style: hiragana;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  thead {
+    color: var(--dark);
+    font-weight: revert;
+    margin: 2rem 0 0;
+    padding: 2rem auto 1rem;
+
+    &:hover > .hanchor {
+      color: var(--secondary);
+    }
+  }
+  & > h1 {
+    margin-top: 2em;
+    font-size: 2em;
+  }
+
+  & > .meta {
+    margin: 0 0 1em 0;
+    opacity: 0.7;
+  }
+
+  & a {
+    font-weight: 600;
+
+    &.internal-link {
+      text-decoration: none;
+      background-color: transparentize(#8f9fa9, 0.85);
+      padding: 0 0.1em;
+      margin: auto -0.1em;
+      border-radius: 3px;
+
+      &.broken {
+        opacity: 0.5;
+        background-color: transparent;
+      }
+    }
+  }
+
+  & p {
+    overflow-wrap: anywhere;
+  }
+}
