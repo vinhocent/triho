@@ -250,7 +250,7 @@ const Home: NextPage = () => {
             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
             <pointLight position={[-10, -10, -10]} />
             <TorusKnot />
-            <OrbitControls minDistance={2} maxDistance={4} />
+            <OrbitControls enableZoom={false} minDistance={2} maxDistance={4} />
           </Canvas>
         </div>
       </div>
