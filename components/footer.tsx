@@ -32,6 +32,11 @@ const Footer = () => {
       <div className="max-w-2xl mx-auto w-full    pt-8 ">
         <NowPlaying />
       </div>
+      <div className="max-w-2xl mx-auto w-full  flex justify-center  pt-8 ">
+        <Link href="https://d3l-n3st.vercel.app/">&lt;&lt;&nbsp; </Link>
+        <Link href="https://d3l-n3st.vercel.app/">✧</Link>
+        <Link href="https://d3l-n3st.vercel.app/">&nbsp;&gt;&gt;</Link>
+      </div>
 
       <div className="max-w-2xl mx-auto w-full  grid grid-cols-1 gap-4 pb-16 pt-8 sm:grid-cols-3 ">
         <div className="flex flex-col space-y-4">
