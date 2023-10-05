@@ -1,12 +1,12 @@
 {
   "redirects": [
     {
-      "source": "/notes/",
-      "destination": "https://publish.obsidian.md/triho/serve?url=mysite.com/my-notes"
+      "source": "/notes",
+      "destination": "https://publish.obsidian.md/triho/serve?url=mysite.com/"
     },
     {
       "source": "/notes/:path*",
-      "destination": "https://publish.obsidian.md/triho/serve?url=mysite.com/my-notes/:path*"
+      "destination": "https://publish.obsidian.md/triho/serve?url=mysite.com/:path*"
     }
   ]
 }
