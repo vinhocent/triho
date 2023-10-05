@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/notes",
-      "destination": "https://publish.obsidian.md/triho/"
+      "destination": "https://publish.obsidian.md/triho/welcome"
     },
     {
       "source": "/notes/:path*",
