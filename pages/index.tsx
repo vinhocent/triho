@@ -231,7 +231,7 @@ const Home: NextPage = () => {
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
                 <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
-                  2020-2024
+                  2020-2025
                 </span>
               </ul>
             </div>
