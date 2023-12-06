@@ -25,7 +25,7 @@ const Footer = () => {
     <footer className={"flex flex-col justify-center px-8 " + faded + fading}>
       <div className="max-w-2xl mx-auto w-full  justify-center h-5 border-b-1px border-black dark:border-white text-2xl text-center ">
         <span className="bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5 transition-colors duration-200">
-          ✵ ✵ ✵
+          ✵
         </span>
       </div>
 
