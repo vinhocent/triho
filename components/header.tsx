@@ -25,12 +25,6 @@ const tabsData = [
     left: 155,
     width: 100,
   },
-  {
-    label: "notes",
-    href: "/notes",
-    left: 255,
-    width: 70,
-  },
 ];
 
 const Header = () => {
