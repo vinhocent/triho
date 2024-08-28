@@ -127,7 +127,7 @@ const Home: NextPage = () => {
                   alt="Tri Ho"
                   height={40}
                   width={40}
-                  src="/wealthsimple.png"
+                  src="/wealthsimple.jpg"
                   priority
                   className={"mr-4 p-2 rounded-lg"}
                 />
