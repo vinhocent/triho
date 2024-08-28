@@ -127,6 +127,34 @@ const Home: NextPage = () => {
                   alt="Tri Ho"
                   height={40}
                   width={40}
+                  src="/wealthsimple.png"
+                  priority
+                  className={"mr-4 p-2 rounded-lg"}
+                />
+                <div className="w-5/12">
+                  <div className="dark:text-white text-gray-800 ">
+                    Wealthsimple
+                  </div>
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
+                    Software Engineering Intern
+                  </span>
+                </div>
+                <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
+
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                  Fall 2024
+                </span>
+              </ul>
+            <ul
+                className={
+                  "flex flex-row justify-items-start items-center mb-4 transition-opacity duration-600" +
+                  fading
+                }
+              >
+                <Image
+                  alt="Tri Ho"
+                  height={40}
+                  width={40}
                   src="/vendia.png"
                   priority
                   className={"mr-4 p-2 rounded-lg"}
