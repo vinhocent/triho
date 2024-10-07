@@ -25,8 +25,14 @@ const tabsData = [
     left: 155,
     width: 100,
   },
+  {
+    label: "resume",
+    href: "TriHo_Resume.pdf",
+    left: 255,
+    width: 80,
+  },
 ];
-
+//  href='TriHo_Resume.pdf' target="_blank" rel="noreferrer"
 const Header = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
