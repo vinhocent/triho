@@ -1,8 +1,7 @@
 import Highlight from "prism-react-renderer";
 import { useState } from "react";
 
-import themedark from "prism-react-renderer/themes/duotoneDark";
-import themelight from "prism-react-renderer/themes/nightOwlLight";
+import { themes } from "prism-react-renderer";
 import { useTheme } from "next-themes";
 
 const copyToClipboard = (str: string) => {
@@ -39,7 +38,7 @@ const Code = ({ children, className }: any) => {
         <Highlight
           code={code}
           language={language}
-          theme={theme === "dark" ? themedark : themelight}
+          theme={theme === "dark" ? themes.dracula : themes.github}
         >
           {({ className, style, tokens, getLineProps, getTokenProps }) => (
             <pre
