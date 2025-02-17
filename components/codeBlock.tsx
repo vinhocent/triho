@@ -1,7 +1,5 @@
-import Highlight from "prism-react-renderer";
+import { Highlight, themes } from "prism-react-renderer";
 import { useState } from "react";
-
-import { themes } from "prism-react-renderer";
 import { useTheme } from "next-themes";
 
 const copyToClipboard = (str: string) => {
