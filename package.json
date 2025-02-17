@@ -45,7 +45,6 @@
     "@types/three": "^0.161.2",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
-    "react-lightboxable": "^1.1.1",
     "sass": "^1.71.1",
     "tailwindcss": "^3.4.1"
   }
