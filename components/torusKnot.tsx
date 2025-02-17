@@ -73,7 +73,7 @@ export default function Torusknot(props: any) {
         onPointerOver={() => hover(true)}
         onPointerOut={() => hover(false)}
       >
-        <torusKnotGeometry args={[2, 0.3, 128, 16, 1, 2]} />
+        <torusKnotGeometry args={[2, 1, 20, 16, 1, 2]} />
         <meshStandardMaterial color={theme === "dark" ? "aqua" : "coral"} />
       </mesh>
     </>

@@ -91,7 +91,7 @@ const Home: NextPage = () => {
             <Image
               alt="me in blue pixels"
               height={300}
-              width={300}
+              width={500}
               src="/mealt.png"
               priority
               className="dark:inline hidden "
@@ -99,7 +99,7 @@ const Home: NextPage = () => {
             <Image
               alt="me in red pixels"
               height={300}
-              width={300}
+              width={500}
               src="/me.png"
               priority
               className="dark:hidden"
@@ -325,7 +325,7 @@ const Home: NextPage = () => {
         <div
           className={
             
-            "h-64 w-full max-w-2xl transition-opacity delay-1100 duration-600 py-5" +
+            "mt-4 h-80 w-full max-w-2xl transition-opacity delay-1100 duration-600 border border-dashed border-black dark:border-gray-700 " +
             fading
           }
         >
@@ -334,7 +334,7 @@ const Home: NextPage = () => {
 
 
             <TorusKnot />
-            <OrbitControls enableZoom={false} minDistance={2} maxDistance={4} />
+            <OrbitControls enableZoom={false} minDistance={8} maxDistance={8} />
           </Canvas>
         </div>
       </div>
