@@ -324,16 +324,15 @@ const Home: NextPage = () => {
         </div>
         <div
           className={
-            css.scene +
-            " w-full max-w-2xl transition-opacity delay-1100 duration-600 py-5" +
+            
+            "h-64 w-full max-w-2xl transition-opacity delay-1100 duration-600 py-5" +
             fading
           }
         >
           <Canvas>
             {/* <color transparent attach="background" args={[bgColour]} /> */}
 
-            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-            <pointLight position={[-10, -10, -10]} />
+
             <TorusKnot />
             <OrbitControls enableZoom={false} minDistance={2} maxDistance={4} />
           </Canvas>
