@@ -35,14 +35,21 @@ function getPostsFilePaths(): string[] {
 
 // getting a single post
 export function getPost(slug: string): Post {
-  // add path/location to a single post
-  const fullPath = join(POSTS_PATH, `${slug}.mdx`);
-  // post's content
-  const fileContents = fs.readFileSync(fullPath, "utf-8");
-  // get the front matter data and content
-  const { data, content } = matter(fileContents);
-  // return the front matter data and content
-  return { data, content };
+  try {
+    const fullPath = join(POSTS_PATH, `${slug}.mdx`);
+    const fileContents = fs.readFileSync(fullPath, "utf-8");
+    const { data, content } = matter(fileContents);
+    
+    // Ensure content is a string
+    if (typeof content !== 'string') {
+      throw new Error(`Invalid content format in ${slug}.mdx`);
+    }
+    
+    return { data, content };
+  } catch (error) {
+    console.error(`Error reading post ${slug}:`, error);
+    return { data: {}, content: '' }; // Return empty content rather than crashing
+  }
 }
 
 // load the post items

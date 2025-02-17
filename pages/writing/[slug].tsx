@@ -2,15 +2,17 @@ import { serialize } from "next-mdx-remote/serialize";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { useState, useEffect } from "react";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
-
-import { IPost } from "../../types/post";
-import { getPost, getAllPosts } from "../../lib/mdx";
-import { ParsedUrlQuery } from "querystring";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { join } from "path";
+import readingTime from "reading-time";
 import Head, { defaultHead } from "next/head";
 import Image from "next/image";
-import Highlight, { defaultProps } from "prism-react-renderer";
-import theme from "prism-react-renderer/themes/nightOwl";
+import { Highlight, themes } from "prism-react-renderer";
 import Code from "../../components/codeBlock";
+import { IPost } from "../../types/post";
+import { ParsedUrlQuery } from "querystring";
 
 // props type
 type Props = {
@@ -22,6 +24,28 @@ type Props = {
 const components = {
   pre: (props: any) => <Code {...props} />,
   Image,
+};
+
+// Get post content by slug
+const getPost = (slug: string) => {
+  const postsDirectory = join(process.cwd(), 'data/writing');
+  const fullPath = join(postsDirectory, `${slug}`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const { data, content } = matter(fileContents);
+  return { content, data };
+};
+
+// Get all post slugs
+const getAllPostSlugs = () => {
+  const postsDirectory = join(process.cwd(), 'data/writing');
+  const fileNames = fs.readdirSync(postsDirectory);
+  return fileNames.map((fileName) => {
+    return {
+      params: {
+        slug: fileName,
+      },
+    };
+  });
 };
 
 const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
@@ -88,7 +112,6 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
 {
   /* <MDXRemote  {...source} /> */
 }
-export default PostPage;
 
 interface Iparams extends ParsedUrlQuery {
   slug: string;
@@ -110,12 +133,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 export const getStaticPaths: GetStaticPaths = () => {
   //only get the slug from posts
-  const posts = getAllPosts(["slug"]);
+  const posts = getAllPostSlugs();
 
   // map through to return post paths
   const paths = posts.map((post) => ({
     params: {
-      slug: post.slug,
+      slug: post.params.slug,
     },
   }));
 
@@ -124,3 +147,5 @@ export const getStaticPaths: GetStaticPaths = () => {
     fallback: false,
   };
 };
+
+export default PostPage;

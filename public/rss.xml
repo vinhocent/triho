@@ -9,12 +9,66 @@
             <link>https://www.triho.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 24 Nov 2022 08:38:08 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Feb 2025 16:47:43 GMT</lastBuildDate>
         <atom:link href="https://www.triho.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 24 Nov 2022 08:38:08 GMT</pubDate>
-        <copyright><![CDATA[All rights reserved 2022, Ibas]]></copyright>
+        <pubDate>Mon, 17 Feb 2025 16:47:43 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2025, Ibas]]></copyright>
         <item>
-            <title><![CDATA[Hello & Welcome]]></title>
+            <title><![CDATA[A Collection of Things I've written for MathNews]]></title>
+            <description><![CDATA[
+## DESCRIBING MY OUTFITS WITHOUT TALKING ABOUT THE ACTUAL CLOTHES
+
+- Wore this one to uptown for another stamp on my Kinton bowler card and a trip to Lost Vessel. To describe this one in one word, I would say “avant-garde”. Not only because it was a bit experimental, but I felt french and regal wearing it. This one featured some classics in my wardrobe, but in an esoteric combination, creating a never seen before outfit. The overall shape of this outfit is a “balloon”.
+- Flipping the first outfit on its side, I wear this next outfit when I’m in a rush and want to show off some grit and 2000s teenage angst. If this outfit were a personality, it would knock you out with a stare. This outfit is not for everyone but, in the same way that your rebellious teenage son is uniquely yours, this outfit is all mine.
+- When I think about this last outfit, I think about “all style, no substance”. From the outside, this outfit looks like it’d be great for a camping trip, but if you tried to go into the wild, you’d probably come out tattered and worn. You would definitely blend into the nature, though. This outfit was an experimental combination of a bunch of earth-tones and varying textures. It definitely looks stylish, but offers absolutely zero functionality.
+
+Try to guess what kinds of outfits these were! Keep dressing and styling!
+
+## SOME SONGS I’VE BEEN LISTENING TO:
+
+**駆け抜ける by School Food Punishment**
+Off their first album, amp-reflection, Yumi Uchimura provides a transcendent journey through the use of 2000s JRock Sound combined with Synths and Violins. I was studying for my STAT 231 exam when I was doing a full listen of amp-reflection — previously I had listened to individual songs from SFP but never ran through the album (haha, this song translates to RUNNING THROUGH). In the middle of reviewing maximum likelihood estimates, at 3:55 of the song, there’s pitched down version of Yumi Uchimura, maybe even auto tuned that echoes the chorus. It was this moment I was shocked, and promptly added it to my playlist. I was in love with the sound, the story the song tells.
+
+Check out School Food Punishment if you want more of that 2000s Japanese experimental blend of pop, rock and some electronica.
+
+**Say by Deb Never**
+Say comes straight out of Deb Never’s last EP, “Thank You for Attending”. Deb offers an assortment of unique sounds, that the label “Indie Pop” could not contain. Say starts off with a nice acoustic guitar, then soothes your worries with her warm and calming vocals. There is not a lot to say here, but there is a lot to hear, check her out.
+
+**Wildflower by MDMA**
+If you’re a fan of the intersection between rap and hyper pop, akin to midwxst – I think this song is for you. MDMA or Molly’s production brings a new sound to the genre — I am definitely excited to hear more of his sound. He will definitely be on my radar.
+
+**Salty & Sweet by Aespa**
+
+I am a big fan of the electronic, noisy, gritty kind of sound so when Aespa was introduced to me half a year ago, I was in love. Off Aespa’s latest comeback, “MY WORLD”, Salty & Sweet introduces you to the song full of grit through rap layered with hard and aggressive industrial synths. This sound screams Aespa; no other group could pull something like this off. Also, I love Winter.
+
+That’s been 4 songs that have been on my mind recently. Have fun with these and keep listening!
+
+## n things i drank in fortnite
+
+- chug jug
+- slurp juice
+- guzzle juice
+
+## REASONS WHY I HAVE PULLED ALL NIGHTERS THIS WEEK
+
+- My STAT 231 assignment was due.
+- My CS 350 kernel was desperately calling for my attention.
+- The monster in me demanded to climb the ranked ladder in Valorant (I’m Diamond 3 now).
+- I wanted breakfast McDonald’s.
+- The Harvey’s Frozen Redbull is surprisingly good, and good at making you stay awake.
+
+(From bottom to top, the order I did them.)
+
+## WHY I AM GIVING UP ON THIS CO ASSIGNMENT?
+
+Because I’d like to go to Burger’s priest right now and get the vatican burger, it is a good burger, I would recommend.
+]]></description>
+            <link>https://www.triho.dev/writing/MathNews</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/MathNews</guid>
+            <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[A Fun Little Template That I can Reference]]></title>
             <description><![CDATA[
 ipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsum
 
@@ -40,43 +94,9 @@ ipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsum
 
 - **lorem ipsum** ipsum
 ]]></description>
-            <link>https://www.triho.dev/writing/helloandwelcome</link>
-            <guid isPermaLink="true">https://www.triho.dev/writing/helloandwelcome</guid>
+            <link>https://www.triho.dev/writing/template</link>
+            <guid isPermaLink="true">https://www.triho.dev/writing/template</guid>
             <pubDate>Mon, 21 Nov 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[winding]]></title>
-            <description><![CDATA[
-**hiraganahiraganahiraganahiraganahiraganahiraganahiraganahiragana** _itaoiccc hiragana_
-
-<Image
-  alt="me in red pixels"
-  height={300}
-  width={300}
-  className="py-5"
-  src="/mikupinkpfp.jpg"
-  priority
-/>
-<img
-
-src="/mikupinkpfp.jpg"
-
->
-
-</img>
-```js file=src/components/button.js
-<button
-  onClick={() => {
-    alert("Hello MDX!");
-  }}
->
-  test
-</button>
-```
-]]></description>
-            <link>https://www.triho.dev/writing/newblog</link>
-            <guid isPermaLink="true">https://www.triho.dev/writing/newblog</guid>
-            <pubDate>Sun, 13 Nov 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

@@ -16,12 +16,12 @@ const copyToClipboard = (str: string) => {
   }
 };
 
-const Code = ({ children, className }: any) => {
+const Code = ({ children, className }: { children: string; className?: string }) => {
   const [copied, setCopied] = useState(false);
   const { theme } = useTheme();
 
   const language = className ? className.replace(/language-/, "") : "";
-  const code = children.trim();
+  const code = typeof children === 'string' ? children.trim() : '';
 
   return (
     <div

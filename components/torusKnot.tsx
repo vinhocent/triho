@@ -9,12 +9,12 @@ export default function Torusknot(props: any) {
   const { theme, resolvedTheme } = useTheme();
   const { size, gl, scene, camera } = useThree();
   const renderIndex = 1;
-  const characters = ' .:-+*=%@#?'; // ASCII characters from darkest to lightest
+  const characters = ' .:-+*=%@#';
   const options = {
-    resolution: 0.15,    // Lower = more detailed
+    resolution: 0.15,
     scale: 1,
     color: theme === "dark" ? true : false,
-    alpha: 0.1,
+    alpha: false,
     characters: characters
   };
 
@@ -48,7 +48,7 @@ export default function Torusknot(props: any) {
       effect.domElement.remove();
       gl.domElement.style.opacity = '1';
     };
-  }, [gl, scene, camera, size, theme]);
+  }, [gl, scene, camera, size, theme, characters]);
 
   const ref = useRef<THREE.Mesh>();
   const [clicked, click] = useState(false);
