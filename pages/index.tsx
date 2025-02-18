@@ -7,13 +7,15 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import type { NextPage } from "next";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useRouter } from "next/router";
-import { OrbitControls, useCursor } from "@react-three/drei";
-import { AsciiEffect } from "three-stdlib";
+import { OrbitControls, SpotLight, useCursor } from "@react-three/drei";
 import TorusKnot from "../components/torusKnot";
+import { AsciiRenderer } from '@react-three/drei'
+import { HemisphereLight } from "three";
 
 // props type
 
 const Home: NextPage = () => {
+  const { theme } = useTheme();
   const [fading, setFading] = useState(" opacity-0 ease-in ");
   const [heading, setHeading] = useState("tr1e_");
   const [subheading, setSubHeading] = useState("digital warlord @f0r3st");
@@ -325,16 +327,26 @@ const Home: NextPage = () => {
         <div
           className={
             
-            "mt-4 h-80 w-full max-w-2xl transition-opacity delay-1100 duration-600 border border-dashed border-black dark:border-gray-700 " +
+            "mt-4 h-80 w-full max-w-2xl transition-opacity delay-1100 duration-600  border-dashed border-black dark:border-gray-700 " +
             fading
           }
         >
           <Canvas>
             {/* <color transparent attach="background" args={[bgColour]} /> */}
 
-
+            <color attach="background" args={['black']} />
+      {/* Add ambient light for overall illumination */}
+      <ambientLight intensity={0.5} />
+      {/* Add directional light for shadows and depth */}
+      <directionalLight position={[500, 10, 20]} intensity={10} />
             <TorusKnot />
-            <OrbitControls enableZoom={false} minDistance={8} maxDistance={8} />
+            <AsciiRenderer 
+              fgColor={theme === "dark" ? "aqua" : "coral"} 
+              bgColor="transparent" 
+              characters=" .:-+*=%@#"
+            />
+
+            <OrbitControls enableZoom={false} minDistance={3.5} maxDistance={3} />
           </Canvas>
         </div>
       </div>
