@@ -14,7 +14,7 @@ export default function Torusknot(props: any) {
   const options = {
     resolution: 0.15,
     scale: 1,
-    color: theme === "dark" ? true : false,
+    color: resolvedTheme === "dark" ? true : false,
     alpha: false,
     characters: characters
   };
@@ -22,15 +22,21 @@ export default function Torusknot(props: any) {
   const ref = useRef<THREE.Mesh>();
   const [clicked, click] = useState(false);
   const [hovered, hover] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   useCursor(hovered);
   useFrame((state, delta) => {
     ref.current!.rotation.y += delta / 2;
   });
 
+  if (!mounted) return null;
+
   return (
     <>
-
-
       <mesh
         {...props}
         ref={ref}
@@ -39,7 +45,7 @@ export default function Torusknot(props: any) {
         onPointerOut={() => hover(false)}
       >
         <torusKnotGeometry args={[1, 0.6, 3, 4]} />
-        <meshStandardMaterial color={theme === "dark" ? "aqua" : "coral"} />
+        <meshStandardMaterial color={resolvedTheme === "dark" ? "aqua" : "coral"} />
       </mesh>
     </>
   );
