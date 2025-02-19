@@ -11,7 +11,7 @@ import { OrbitControls, SpotLight, useCursor } from "@react-three/drei";
 import TorusKnot from "../components/torusKnot";
 import { AsciiRenderer } from '@react-three/drei'
 import { HemisphereLight } from "three";
-
+import Link from "next/link";
 // props type
 
 const Home: NextPage = () => {
@@ -324,6 +324,13 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+        <div className={"max-w-2xl mx-auto w-full mt-10 mb-10 transition-opacity delay-1400 duration-1000 justify-center h-5 border-b-1px border-gray-400 dark:border-gray-500 text-2xl text-center " + fading}>
+      <span className="bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5 transition-colors duration-200 inline-flex items-center gap-2">
+      <Link href="https://d3l-n3st.vercel.app/prev"><span className="inline-block rotate-180 relative top-[2px]">➢</span></Link>
+          <Link href="https://d3l-n3st.vercel.app/">✵</Link>
+          <Link href="https://d3l-n3st.vercel.app/next" className="inline-block  relative top-[1px]">➢</Link>
+        </span>
+      </div>
         <div
           className={
             

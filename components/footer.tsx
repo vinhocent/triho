@@ -25,19 +25,9 @@ const Footer = () => {
 
   return (
     <footer className={"flex flex-col justify-center px-8 " + faded + fading}>
-      <div className="max-w-2xl mx-auto w-full  justify-center h-5 border-b-1px border-black dark:border-white text-2xl text-center ">
+      <div className="max-w-2xl mx-auto w-full  justify-center h-5 border-b-1px border-gray-400 dark:border-gray-500 text-2xl text-center ">
       <span className="bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5 transition-colors duration-200 inline-flex items-center gap-2">
-      <Link href="https://d3l-n3st.vercel.app/prev"><span className="inline-block rotate-180 relative top-[2px]">➢</span></Link>
-          <Link href="https://d3l-n3st.vercel.app/">✵</Link>
-          <Link href="https://d3l-n3st.vercel.app/next" className="inline-block  relative top-[1px]">➢</Link>
-        </span>
-      </div>
-
-      <div className="max-w-2xl mx-auto w-full    pt-8 ">
-        <NowPlaying />
-      </div>
-      <div className="max-w-2xl mx-auto w-full  flex justify-center  pt-8 pl-[6px] ">
-        <Link href="https://cs.uwatering.com/#www.triho.dev?nav=prev"className="inline-block  relative right-[3px] "> ↞  </Link>
+      <Link href="https://cs.uwatering.com/#www.triho.dev?nav=prev"><span className="inline-block rotate-180 relative top-[1px]">➢</span></Link>
         <Link href='https://cs.uwatering.com/#www.triho.dev' target='_blank'>
             <img
                 src={mounted ? `https://cs.uwatering.com/icon.${theme === 'light' ? 'black' : 'white'}.svg` : 'https://cs.uwatering.com/icon.white.svg'}
@@ -45,9 +35,16 @@ const Footer = () => {
                 style={{ width: '24px', height: 'auto', opacity: 0.8 }}
             />
         </Link>
-        <Link href="https://cs.uwatering.com/#www.triho.dev?nav=next">↠</Link>
+        <Link href="https://cs.uwatering.com/#www.triho.dev?nav=next" className="inline-block  relative right-2">➢</Link>
 
+        </span>
+ 
       </div>
+
+      <div className="max-w-2xl mx-auto w-full    pt-8 ">
+        <NowPlaying />
+      </div>
+
 
       <div className="max-w-2xl mx-auto w-full  grid grid-cols-1 gap-4 pb-16 pt-8 sm:grid-cols-3 ">
         <div className="flex flex-col space-y-4">
@@ -97,7 +94,9 @@ const Footer = () => {
             Linkedin
           </a>
         </div>
+        
       </div>
+
     </footer>
   );
 };
