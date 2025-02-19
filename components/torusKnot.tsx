@@ -8,35 +8,21 @@ import { AsciiRenderer } from '@react-three/drei'
 
 export default function Torusknot(props: any) {
   const { theme, resolvedTheme } = useTheme();
-  const { size, gl, scene, camera } = useThree();
-  const renderIndex = 1;
-  const characters = ' .:-+*=%@#';
-  const options = {
-    resolution: 0.15,
-    scale: 1,
-    color: resolvedTheme === "dark" ? true : false,
-    alpha: false,
-    characters: characters
-  };
+
 
   const ref = useRef<THREE.Mesh>();
   const [clicked, click] = useState(false);
   const [hovered, hover] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   useCursor(hovered);
   useFrame((state, delta) => {
     ref.current!.rotation.y += delta / 2;
+    
   });
-
-  if (!mounted) return null;
 
   return (
     <>
+
+
       <mesh
         {...props}
         ref={ref}

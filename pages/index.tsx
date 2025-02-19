@@ -15,7 +15,7 @@ import Link from "next/link";
 // props type
 
 const Home: NextPage = () => {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
   const [fading, setFading] = useState(" opacity-0 ease-in ");
   const [heading, setHeading] = useState("tr1e_");
   const [subheading, setSubHeading] = useState("digital warlord @f0r3st");
@@ -348,7 +348,7 @@ const Home: NextPage = () => {
       <directionalLight position={[500, 10, 20]} intensity={10} />
             <TorusKnot />
             <AsciiRenderer 
-              fgColor={theme === "dark" ? "aqua" : "coral"} 
+              fgColor={resolvedTheme === "dark" ? "aqua" : "coral"} 
               bgColor="transparent" 
               characters=" .:-+*=%@#"
             />
