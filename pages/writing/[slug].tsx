@@ -29,7 +29,7 @@ const components = {
 // Get post content by slug
 const getPost = (slug: string) => {
   const postsDirectory = join(process.cwd(), 'data/writing');
-  const fullPath = join(postsDirectory, `${slug}`);
+  const fullPath = join(postsDirectory, `${slug}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
   return { content, data };
@@ -39,13 +39,15 @@ const getPost = (slug: string) => {
 const getAllPostSlugs = () => {
   const postsDirectory = join(process.cwd(), 'data/writing');
   const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames.map((fileName) => {
-    return {
-      params: {
-        slug: fileName,
-      },
-    };
-  });
+  return fileNames
+    .filter((fileName) => /\.mdx?$/.test(fileName))
+    .map((fileName) => {
+      return {
+        params: {
+          slug: fileName.replace(/\.mdx?$/, ''),
+        },
+      };
+    });
 };
 
 const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
