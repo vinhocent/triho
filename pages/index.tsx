@@ -73,21 +73,19 @@ const Home: NextPage = () => {
               }
             >
               {
-                "Hello! I'm a developer/learner/terminal-enjoyer studying Computer Science."
+                "It's pronounced 'tree'! I am a software engineer. Have a look around."
               }
             </p>
             <p
               className={
-                "text-gray-600 dark:text-gray-400 mb-12 break-normal transition-opacity duration-600   delay-700 " +
+                "text-gray-600 dark:text-gray-400 mb-12 break-normal transition-opacity duration-600 delay-700 " +
                 fading
               }
             >
-              I love building unique{" "}
-              <span className="">{" user experiences"}</span>
-              {", "}
-              <span className="">open-source development</span> {" and "}
-              <span className="">cli applications</span>.
-            </p>
+              {"I'm currently interested in programming languages, human languages, r/floorliving, and zine-making "}
+
+  
+              </p>
           </div>
           <div className={"duration-800  delay-800 " + fading}>
             <Image
