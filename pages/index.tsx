@@ -82,7 +82,7 @@ const Home: NextPage = () => {
                 fading
               }
             >
-              {"I'm currently interested in programming languages, human languages, r/floorliving, and zine-making "}
+              {"I'm currently interested in programming languages, human languages, r/floordesks, and zine-making "}
 
   
               </p>
