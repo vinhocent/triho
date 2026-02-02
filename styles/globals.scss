@@ -21,6 +21,50 @@ a {
   box-sizing: border-box;
 }
 
+.ascii-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  user-select: none;
+  white-space: pre;
+  display: block;
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  opacity: 0;
+  mix-blend-mode: multiply;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms ease, color 150ms ease;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  --ascii-x: 50vw;
+  --ascii-y: 50vh;
+  --ascii-radius: 140px;
+  -webkit-mask-image: radial-gradient(
+    circle var(--ascii-radius) at var(--ascii-x) var(--ascii-y),
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  mask-image: radial-gradient(
+    circle var(--ascii-radius) at var(--ascii-x) var(--ascii-y),
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+
+.ascii-overlay--active {
+  opacity: 0.65;
+}
+
+.dark .ascii-overlay {
+  mix-blend-mode: screen;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.25);
+}
+
 @layer base {
   body {
     @apply dark:bg-black bg-amber-50 transition-colors duration-200;
