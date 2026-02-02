@@ -124,14 +124,6 @@ const Home: NextPage = () => {
                   fading
                 }
               >
-                <Image
-                  alt="Tri Ho"
-                  height={40}
-                  width={40}
-                  src="/meta.png"
-                  priority
-                  className={"mr-4 p-2 rounded-lg"}
-                />
                 <div className="w-5/12">
                   <div className="dark:text-white text-gray-800 ">
                     Meta
@@ -152,14 +144,6 @@ const Home: NextPage = () => {
                   fading
                 }
               >
-                <Image
-                  alt="Tri Ho"
-                  height={40}
-                  width={40}
-                  src="/wealthsimple.png"
-                  priority
-                  className={"mr-4 p-2 rounded-lg"}
-                />
                 <div className="w-5/12">
                   <div className="dark:text-white text-gray-800 ">
                     Wealthsimple
@@ -180,14 +164,6 @@ const Home: NextPage = () => {
                   fading
                 }
               >
-                <Image
-                  alt="Tri Ho"
-                  height={40}
-                  width={40}
-                  src="/vendia.png"
-                  priority
-                  className={"mr-4 p-2 rounded-lg"}
-                />
                 <div className="w-5/12">
                   <div className="dark:text-white text-gray-800 ">
                     Vendia
@@ -208,14 +184,6 @@ const Home: NextPage = () => {
                   fading
                 }
               >
-                <Image
-                  alt="Tri Ho"
-                  height={40}
-                  width={40}
-                  src="/1password.png"
-                  priority
-                  className={"mr-4 p-2 rounded-lg"}
-                />
                 <div className="w-5/12">
                   <div className="dark:text-white text-gray-800 ">
                     1Password
@@ -237,14 +205,6 @@ const Home: NextPage = () => {
                   fading
                 }
               >
-                <Image
-                  alt="Tri Ho"
-                  height={40}
-                  width={40}
-                  src="/huawei.svg"
-                  priority
-                  className={"mr-4 p-2 rounded-lg"}
-                />
                 <div className="w-5/12">
                   <div className="dark:text-white text-gray-800 ">Huawei</div>
                   <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
@@ -264,14 +224,6 @@ const Home: NextPage = () => {
                   fading
                 }
               >
-                <Image
-                  alt="Tri Ho"
-                  height={40}
-                  width={40}
-                  src="/1password.png"
-                  priority
-                  className={"mr-4 p-2 rounded-lg"}
-                />
                 <div className="w-5/12">
                   <div className="dark:text-white text-gray-800 ">
                     1Password
@@ -297,14 +249,6 @@ const Home: NextPage = () => {
                   fading
                 }
               >
-                <Image
-                  alt="Tri Ho"
-                  height={40}
-                  width={40}
-                  src="/waterloo.png"
-                  priority
-                  className={"mr-4 p-2 rounded-lg"}
-                />
                 <div className="w-5/12">
                   <div className="dark:text-white text-gray-800 ">
                     University of Waterloo
