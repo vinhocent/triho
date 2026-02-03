@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
     if (window.location.hostname.toString() == "www.triho.dev") {
       setHeading("Tri Ho");
-      setSubHeading("CS Student @ UWaterloo");
+      setSubHeading("software engineer");
     }
   }, []);
 
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             </h2>
             <p
               className={
-                "text-gray-600 dark:text-gray-400 mb-2 break-normal transition-opacity duration-600   delay-700 " +
+                "text-gray-700 dark:text-gray-400 mb-2 break-normal transition-opacity duration-600   delay-700 " +
                 fading
               }
             >
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
             </p>
             <p
               className={
-                "text-gray-600 dark:text-gray-400 mb-12 break-normal transition-opacity duration-600 delay-700 " +
+                "text-gray-700 dark:text-gray-400 mb-12 break-normal transition-opacity duration-600 delay-700 " +
                 fading
               }
             >
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
         <div className={"w-full max-w-2xl  "}>
           <p
             className={
-              "text-gray-600 font-semibold text-xl dark:text-gray-400 break-all mb-6 transition-opacity duration-600   delay-700 " +
+              "text-gray-700 font-semibold text-xl dark:text-gray-400 break-all mb-6 transition-opacity duration-600   delay-700 " +
               fading
             }
           >
@@ -128,13 +128,13 @@ const Home: NextPage = () => {
                   <div className="dark:text-white text-gray-800 ">
                     Meta
                   </div>
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-700 text-sm ">
                     Software Engineering Intern
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-700 text-sm">
                   Summer 2025
                 </span>
               </ul>
@@ -148,13 +148,13 @@ const Home: NextPage = () => {
                   <div className="dark:text-white text-gray-800 ">
                     Wealthsimple
                   </div>
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-700 text-sm ">
                     Software Engineering Intern
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-700 text-sm">
                   Fall 2024
                 </span>
               </ul>
@@ -168,13 +168,13 @@ const Home: NextPage = () => {
                   <div className="dark:text-white text-gray-800 ">
                     Vendia
                   </div>
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-700 text-sm ">
                     Software Engineering Intern
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-700 text-sm">
                   Summer 2024
                 </span>
               </ul>
@@ -188,13 +188,13 @@ const Home: NextPage = () => {
                   <div className="dark:text-white text-gray-800 ">
                     1Password
                   </div>
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-700 text-sm ">
                     Software Developer Intern
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-700 text-sm">
                   Fall 2022
                 </span>
               </ul>
@@ -207,13 +207,13 @@ const Home: NextPage = () => {
               >
                 <div className="w-5/12">
                   <div className="dark:text-white text-gray-800 ">Huawei</div>
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-700 text-sm ">
                     Software Engineering Intern
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-700 text-sm">
                   Winter 2022
                 </span>
               </ul>
@@ -228,13 +228,13 @@ const Home: NextPage = () => {
                   <div className="dark:text-white text-gray-800 ">
                     1Password
                   </div>
-                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm ">
+                  <span className="dark:text-gray-400 whitespace-nowrap text-gray-700 text-sm ">
                     Software Developer Intern
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-700 text-sm">
                   Summer 2021
                 </span>
               </ul>
@@ -253,13 +253,13 @@ const Home: NextPage = () => {
                   <div className="dark:text-white text-gray-800 ">
                     University of Waterloo
                   </div>
-                  <span className="dark:text-gray-400 whitespace-nowrap  text-gray-600 text-sm ">
+                  <span className="dark:text-gray-400 whitespace-nowrap  text-gray-700 text-sm ">
                     B.S. Computer Science & C&O
                   </span>
                 </div>
                 <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400"></span>
 
-                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm">
+                <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-700 text-sm">
                   2020-2025
                 </span>
               </ul>

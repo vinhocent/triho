@@ -69,13 +69,13 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
                   {post.title}
                 </div>
 
-                <span className="dark:text-gray-400 whitespace-nowrap text-gray-600 text-sm dark:group-hover:text-gray-500 dark:group-hover/item:text-gray-300 duration-300 group-hover:text-gray-400 group-hover/item:text-black">
+                <span className="dark:text-gray-400 whitespace-nowrap text-gray-700 text-sm dark:group-hover:text-gray-500 dark:group-hover/item:text-gray-300 duration-300 group-hover:text-gray-400 group-hover/item:text-black">
                   {post.description}
                 </span>
               </Link>
               <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400 duration-300"></span>
 
-              <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-600 text-sm dark:group-hover:text-gray-500 dark:group-hover/item:text-gray-300 duration-300 group-hover:text-gray-400 group-hover/item:text-black">
+              <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-700 text-sm dark:group-hover:text-gray-500 dark:group-hover/item:text-gray-300 duration-300 group-hover:text-gray-400 group-hover/item:text-black">
                 {post.date}
               </span>
             </li>

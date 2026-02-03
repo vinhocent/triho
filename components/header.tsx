@@ -76,7 +76,7 @@ const Header = () => {
                 href={tab.href}
                 key={idx}
                 className={
-                  "hidden md:inline-block p-1 sm:px-3 sm:py-2 z-20 rounded-lg  transition-all text-gray-600 dark:text-gray-400 dark:hover:text-white hover:text-black ease-in-out"
+                  "hidden md:inline-block p-1 sm:px-3 sm:py-2 z-20 rounded-lg  transition-all text-gray-700 dark:text-gray-400 dark:hover:text-white hover:text-black ease-in-out"
                 }
                 // hover:bg-amber-100 dark:hover:bg-gray-800
                 onMouseEnter={() => setTabPosition(idx)}

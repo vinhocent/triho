@@ -50,19 +50,19 @@ const Footer = () => {
         <div className="flex flex-col space-y-4">
           <Link
             href="/"
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-gray-500 hover:text-gray-700 transition"
           >
             About
           </Link>
           <Link
             href="/writing"
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-gray-500 hover:text-gray-700 transition"
           >
             Writing
           </Link>
           <Link
             href="/pictures"
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-gray-500 hover:text-gray-700 transition"
           >
             Pictures
           </Link>
@@ -70,7 +70,7 @@ const Footer = () => {
         <div className="flex flex-col space-y-4"></div>
         <div className="flex flex-col space-y-4">
           <a
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-gray-500 hover:text-gray-700 transition"
             href="https://www.Github.com/vinhocent"
             target="_blank"
             rel="noreferrer noopener "
@@ -78,7 +78,7 @@ const Footer = () => {
             Github
           </a>
           <a
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-gray-500 hover:text-gray-700 transition"
             href="https://www.twitter.com/vinhocent"
             target="_blank"
             rel="noreferrer noopener "
@@ -86,7 +86,7 @@ const Footer = () => {
             Twitter
           </a>
           <a
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-gray-500 hover:text-gray-700 transition"
             href="https://www.linkedin.com/in/tri-ho/"
             target="_blank"
             rel="noreferrer noopener "
