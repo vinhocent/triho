@@ -33,6 +33,7 @@ a {
   font-size: 16px;
   letter-spacing: 0.6px;
   opacity: 0;
+  color: coral;
   mix-blend-mode: multiply;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: opacity 500ms ease, color 150ms ease;
@@ -61,6 +62,7 @@ a {
 }
 
 .dark .ascii-overlay {
+  color: aqua;
   mix-blend-mode: screen;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.25);
 }

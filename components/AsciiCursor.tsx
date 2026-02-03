@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { useTheme } from "next-themes";
 
 const CHARS = " .:-=+*#%@";
 
@@ -24,8 +23,20 @@ function makeAscii(cols: number, rows: number, t: number) {
 }
 
 export default function AsciiCursor() {
-  const { resolvedTheme } = useTheme();
   const preRef = useRef<HTMLPreElement | null>(null);
+  const cacheRef = useRef<{
+    cols: number;
+    rows: number;
+    fps: number;
+    totalFrames: number;
+    frames: Map<number, string>;
+  }>({
+    cols: 0,
+    rows: 0,
+    fps: 45,
+    totalFrames: 120,
+    frames: new Map(),
+  });
 
   useEffect(() => {
     const el = preRef.current;
@@ -40,7 +51,22 @@ export default function AsciiCursor() {
       const charWidth = fontSize * 0.6;
       const cols = Math.ceil(window.innerWidth / charWidth) + 2;
       const rows = Math.ceil(window.innerHeight / lineHeight) + 2;
-      el.textContent = makeAscii(cols, rows, time / 1000);
+      const cache = cacheRef.current;
+      if (cache.cols !== cols || cache.rows !== rows) {
+        cache.cols = cols;
+        cache.rows = rows;
+        cache.frames.clear();
+      }
+
+      const tSeconds = time / 1000;
+      const frameIndex =
+        Math.floor(tSeconds * cache.fps) % cache.totalFrames;
+      let frame = cache.frames.get(frameIndex);
+      if (!frame) {
+        frame = makeAscii(cols, rows, frameIndex / cache.fps);
+        cache.frames.set(frameIndex, frame);
+      }
+      el.textContent = frame;
     };
 
     measure(0);
@@ -56,14 +82,19 @@ export default function AsciiCursor() {
       }
       hideTimer = window.setTimeout(() => {
         el.classList.remove("ascii-overlay--active");
+        if (refreshTimer) {
+          window.clearInterval(refreshTimer);
+          refreshTimer = null;
+        }
       }, 800);
       if (!refreshTimer) {
         refreshTimer = window.setInterval(() => {
           measure(performance.now());
-        }, 220);
+        }, 140);
       }
     };
     const onResize = () => {
+      cacheRef.current.frames.clear();
       measure(performance.now());
     };
 
@@ -87,9 +118,6 @@ export default function AsciiCursor() {
       className="ascii-overlay"
       ref={preRef}
       aria-hidden="true"
-      style={{
-        color: resolvedTheme === "dark" ? "aqua" : "coral",
-      }}
     />
   );
 }
