@@ -7,12 +7,14 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Head from "next/head";
 import AsciiCursor from "../components/AsciiCursor";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
       <Header />
       <AsciiCursor />
+      <Analytics />
       <Head>
         <style>
           @import
