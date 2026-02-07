@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer className={"flex flex-col justify-center px-8 " + faded + fading}>
       <div className="max-w-2xl mx-auto w-full  justify-center h-5 border-b-1px border-gray-400 dark:border-gray-500 text-2xl text-center ">
-      <span className="bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5 transition-colors duration-200 inline-flex items-center gap-2">
+      <span className="dark:text-gray-400  bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5 transition-colors duration-200 inline-flex items-center gap-2">
       <Link href="https://cs.uwatering.com/#www.triho.dev?nav=prev"><span className="inline-block rotate-180 relative top-[1px]">➢</span></Link>
         <Link href='https://cs.uwatering.com/#www.triho.dev' target='_blank'>
             <img

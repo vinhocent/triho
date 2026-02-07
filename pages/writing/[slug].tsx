@@ -102,7 +102,7 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
           </ul>
         </div>
         <article
-          className={"transition-opacity delay-1200 duration-600" + fading}
+          className={"dark:text-gray-300 transition-opacity delay-1200 duration-600" + fading}
         >
           <MDXRemote components={components} {...source} />
         </article>
