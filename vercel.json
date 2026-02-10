@@ -1,6 +1,14 @@
 {
   "redirects": [
     {
+      "source": "/landing",
+      "destination": "/"
+    },
+    {
+      "source": "/landing/:path*",
+      "destination": "/"
+    },
+    {
       "source": "/notes",
       "destination": "https://publish.obsidian.md/triho/welcome"
     },
