@@ -73,7 +73,7 @@ const Home: NextPage = () => {
               }
             >
               {
-                "It's pronounced 'tree'! I am a software engineer. Have a look around."
+                "It's pronounced 'tree'! I'm currently an engineer at OpenAI working on RealtimeAPI. Have a look around!"
               }
             </p>
             <p
