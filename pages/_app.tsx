@@ -16,13 +16,14 @@ export default function App({ Component, pageProps }: AppProps) {
       <AsciiCursor />
       <Analytics />
       <Head>
+        <link rel="icon" href="/tr1e.svg" type="image/svg+xml" />
+
         <style>
           @import
           url(&apos;https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap&apos;);
         </style>
       </Head>
       <Component {...pageProps} />
-      <link rel="icon" href="/favicon.ico" />
 
       <Footer />
     </ThemeProvider>
