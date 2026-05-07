@@ -42,7 +42,6 @@ const Home: NextPage = () => {
         <meta name="twitter:site" content="@vinhocent" />
         <meta name="twitter:title" content={heading} />
         <meta name="twitter:description" content={subheading} />
-        <link rel="shortcut icon" href="/tr1e.svg" />
       </Head>
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
         <div className="flex flex-col-reverse sm:flex-row items-start ">
