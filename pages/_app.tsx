@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         </style>
       </Head>
       <Component {...pageProps} />
+      <link rel="icon" href="/favicon.ico" />
 
       <Footer />
     </ThemeProvider>
