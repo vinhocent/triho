@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { Picture, pictures } from "../data/pictures";
@@ -84,6 +85,9 @@ const Design: NextPage = () => {
 
   return (
     <div className="px-8 ">
+      <Head>
+        <title>design | Tri Ho</title>
+      </Head>
       <div className=" flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
         <h1
           className={

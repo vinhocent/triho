@@ -3,7 +3,7 @@ import { IPost } from "../../types/post";
 import Link from "next/link";
 import { getAllPosts } from "../../lib/mdx";
 import generateRssFeed from "../../lib/generateRSSFeed";
-import Head, { defaultHead } from "next/head";
+import Head from "next/head";
 
 import { useState, useEffect } from "react";
 
@@ -23,6 +23,9 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
 
   return (
     <div className="px-8 ">
+      <Head>
+        <title>writing | Tri Ho</title>
+      </Head>
       <div className=" flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-12">
         <h1
           className={
@@ -53,6 +56,7 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
 
         <ul
           id={"blogs"}
+          onMouseLeave={() => setHoveredSlug(null)}
           className={
             "flex flex-col items-stretch justify-between w-full relative max-w-2xl list-none border-gray-200 dark:border-gray-700 mx-auto p-0 pt-8 pb-8 "
           }
@@ -61,7 +65,6 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
             <li
               key={post.slug}
               onMouseEnter={() => setHoveredSlug(post.slug)}
-              onMouseLeave={() => setHoveredSlug(null)}
               className={
                 "group/item flex w-full flex-row justify-items-start items-center mb-4 transition-opacity duration-500" +
                 fading

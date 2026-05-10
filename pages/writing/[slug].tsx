@@ -6,10 +6,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { join } from "path";
-import readingTime from "reading-time";
-import Head, { defaultHead } from "next/head";
+import Head from "next/head";
 import Image from "next/image";
-import { Highlight, themes } from "prism-react-renderer";
 import Code from "../../components/codeBlock";
 import { IPost } from "../../types/post";
 import { ParsedUrlQuery } from "querystring";
@@ -60,6 +58,9 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
   // get setters
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 px-8 sm:px-0 mx-auto pb-12">
+      <Head>
+        <title>{`${frontMatter.title} | Tri Ho`}</title>
+      </Head>
       <div
         className={
           " flex-col items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-2 pb-8 "
