@@ -3,6 +3,8 @@ import { useEffect, useRef } from "react";
 const CHARS = " .:-=+*#%@";
 const LOOP_PERIOD = Math.PI * 2;
 const TIME_SCALE = 0.65;
+const CONTENT_SELECTOR =
+  'a, button, input, textarea, select, summary, img, canvas, svg, p, h1, h2, h3, h4, h5, h6, li, span, pre, code, blockquote, [role="button"], [tabindex]:not([tabindex="-1"])';
 
 function makeAsciiWindow(
   cols: number,
@@ -147,11 +149,18 @@ export default function AsciiCursor() {
       el.style.setProperty("--ascii-x", `${event.clientX}px`);
       el.style.setProperty("--ascii-y", `${event.clientY}px`);
       el.classList.add("ascii-overlay--active");
+      const target = event.target;
+      if (target instanceof Element && target.closest(CONTENT_SELECTOR)) {
+        el.classList.add("ascii-overlay--interactive");
+      } else {
+        el.classList.remove("ascii-overlay--interactive");
+      }
       if (hideTimer) {
         window.clearTimeout(hideTimer);
       }
       hideTimer = window.setTimeout(() => {
         el.classList.remove("ascii-overlay--active");
+        el.classList.remove("ascii-overlay--interactive");
         if (refreshTimer) {
           window.clearInterval(refreshTimer);
           refreshTimer = null;

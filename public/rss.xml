@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[tr1e | RSS Feed]]></title>
-        <description><![CDATA[@f0r3st]]></description>
-        <link>https://www.triho.dev</link>
+        <title><![CDATA[Tri Ho | RSS Feed]]></title>
+        <description><![CDATA[software engineer]]></description>
+        <link>https://triho.dev</link>
         <image>
-            <url>https://www.triho.dev/logo.png</url>
-            <title>tr1e | RSS Feed</title>
-            <link>https://www.triho.dev</link>
+            <url>https://triho.dev/logo.png</url>
+            <title>Tri Ho | RSS Feed</title>
+            <link>https://triho.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 07 Feb 2026 04:06:33 GMT</lastBuildDate>
-        <atom:link href="https://www.triho.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 07 Feb 2026 04:06:33 GMT</pubDate>
+        <lastBuildDate>Sun, 10 May 2026 10:30:52 GMT</lastBuildDate>
+        <atom:link href="https://triho.dev/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 10 May 2026 10:30:52 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, Ibas]]></copyright>
+        <item>
+            <title><![CDATA[Graduating]]></title>
+            <description><![CDATA[
+i graduated this past december, signaling the end of my 1932 days as an undergrad college student, and my days in waterloo.
+
+but it also signaled the beginning of a new branch.
+
+i wanted to write down some rough thoughts on that.
+
+### swords & maggots
+
+during my last year of high school, on 2020's leap day, i wrote a letter to myself for the next leap year in 2024. at the time, i was filled with a lot of doubt and lacked a lot of confidence. i call that state "having maggots all over you".
+
+i wrote about a lot of things in that letter, but what catches my eye now is how i signed it off.
+
+> I hope you're happy. Anyways, I have the AP chemistry all multiple choice test to study for so, see ya around! fingers crossed I do good, but I guess you already know
+
+i'm not sure why i specified that it was all multiple choice, but i'm glad i did because i remember that test well. i remember doing well. it was one of the few times i did well enough to get called out by our chemistry teacher for it. his classes had this quirk where he would announce the top 5 or so marks and who got them.
+
+i remember always chasing that "prestige", a chase that gets 10x'ed at waterloo.
+
+that chase is a double-edged sword. it is motivating, but it is also damaging. i'd love to tell you that i'm over it, but i'm not. maybe it would be easier to say i've gotten over it because i've made leaps in xyz facets of my life, but i don't think that's true. and anyway i think saying that comes off a little pretentious.
+
+results shouldn't dictate how you control that sword.
+
+at its best, the sword slays the maggots on you. but the maggots come back. that's how i feel about chasing prestige. it can temporarily remove the doubt and anxiety you face, but without dealing with the source, those feelings come clinging back.
+
+y'know?
+
+### openai
+
+i joined openai this february, working on the multimodal api team.
+
+i don't want to talk too much about that here, but i've found it extremely rewarding. abstractly, its that skill doesn't feel diluted.
+everyone is talented and i can learn something, always. you see how they think, how they decide, how they break things down.
+
+for a new grad, that's kind of the best possible environment. there is a lot to absorb.
+
+### san francisco
+
+this is my first time living in the bay area and in san francisco. i don't have that many thoughts yet, but i like the weather and i like biking everywhere. although i imagine i'll start missing snow eventually.
+
+i haven't found my spot yet. somewhere i can go anytime to relax. in seattle, that was the uw campus. i wonder what it'll be here.
+
+### thank you
+
+this is the main reason i wanted to write this.
+
+graduating felt individual on paper, but it did not feel individual in reality. i wanted to give thanks to everyone who helped me make it past the finish line.
+
+to dora and leon, thank you for being my rocks throughout it all.
+
+to julian, joyce, michael, and william, thank you for being north stars of who i wanted to be.
+
+to chris, hank, and robbie, thank you for being great roommates. i'll cherish our time at fergus.
+
+to stephen and aaron, thank you for being there at the finish line. i'm happy to have done it with you two.
+
+to everyone, *thank you*.
+]]></description>
+            <link>https://triho.dev/writing/graduating</link>
+            <guid isPermaLink="true">https://triho.dev/writing/graduating</guid>
+            <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[A Collection of Things I've written for MathNews]]></title>
             <description><![CDATA[
@@ -63,8 +127,8 @@ That’s been 4 songs that have been on my mind recently. Have fun with these an
 
 Because I’d like to go to Burger’s priest right now and get the vatican burger, it is a good burger, I would recommend.
 ]]></description>
-            <link>https://www.triho.dev/writing/MathNews</link>
-            <guid isPermaLink="true">https://www.triho.dev/writing/MathNews</guid>
+            <link>https://triho.dev/writing/MathNews</link>
+            <guid isPermaLink="true">https://triho.dev/writing/MathNews</guid>
             <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
@@ -94,8 +158,8 @@ ipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsumipsum
 
 - **lorem ipsum** ipsum
 ]]></description>
-            <link>https://www.triho.dev/writing/template</link>
-            <guid isPermaLink="true">https://www.triho.dev/writing/template</guid>
+            <link>https://triho.dev/writing/template</link>
+            <guid isPermaLink="true">https://triho.dev/writing/template</guid>
             <pubDate>Mon, 21 Nov 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>

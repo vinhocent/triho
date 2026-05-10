@@ -52,8 +52,6 @@ const getAllPostSlugs = () => {
 
 const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
-  const [heading, setHeading] = useState("tr1e_");
-  const [subheading, setSubHeading] = useState("digital warlord @f0r3st");
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");

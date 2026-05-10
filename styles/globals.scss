@@ -61,10 +61,103 @@ a {
   opacity: 0.65;
 }
 
+.ascii-overlay--interactive {
+  opacity: 0.32;
+}
+
 .dark .ascii-overlay {
   color: aqua;
   mix-blend-mode: screen;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.25);
+}
+
+.design-lightbox {
+  animation: design-lightbox-fade 240ms ease-out;
+  opacity: 1;
+  transition: opacity 220ms ease;
+}
+
+.design-lightbox--closing {
+  opacity: 0;
+}
+
+.design-image-frame {
+  position: relative;
+  max-width: 100%;
+  max-height: 86vh;
+}
+
+.design-lightbox-image {
+  position: relative;
+  z-index: 1;
+  animation: design-lightbox-image-enter 240ms ease-out;
+}
+
+.design-ascii-field {
+  position: absolute;
+  inset: -10rem -14rem;
+  z-index: 0;
+  margin: 0;
+  color: coral;
+  width: calc(100% + 28rem);
+  height: calc(100% + 20rem);
+  max-width: none;
+  overflow: hidden;
+  font-size: clamp(5px, 0.72vw, 8px);
+  line-height: 0.78;
+  letter-spacing: 0.02em;
+  opacity: 0.68;
+  pointer-events: none;
+  user-select: none;
+  white-space: pre;
+  mix-blend-mode: multiply;
+  -webkit-mask-image: radial-gradient(
+    62% 62% at 50% 50%,
+    rgba(0, 0, 0, 0.96) 0%,
+    rgba(0, 0, 0, 0.8) 34%,
+    rgba(0, 0, 0, 0.4) 58%,
+    rgba(0, 0, 0, 0.12) 78%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: radial-gradient(
+    62% 62% at 50% 50%,
+    rgba(0, 0, 0, 0.96) 0%,
+    rgba(0, 0, 0, 0.8) 34%,
+    rgba(0, 0, 0, 0.4) 58%,
+    rgba(0, 0, 0, 0.12) 78%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  animation: design-ascii-field-enter 420ms ease-out;
+}
+
+.dark .design-ascii-field {
+  color: aqua;
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
+
+@keyframes design-lightbox-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes design-lightbox-image-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes design-ascii-field-enter {
+  from {
+    opacity: 0;
+  }
 }
 
 @layer base {

@@ -6,7 +6,7 @@ export default function _404() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>tr1e_</title>
+        <title>Tri Ho</title>
       </Head>
 
       <div> LOLOLOL</div>

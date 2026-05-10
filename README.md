@@ -1,4 +1,4 @@
-# tr1e portfolio\_
+# triho.dev portfolio
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)

@@ -15,6 +15,7 @@ type Props = {
 // component render function
 const Blog: NextPage<Props> = ({ posts }: Props) => {
   const [fading, setFading] = useState(" opacity-0 ease-in ");
+  const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
 
   useEffect(() => {
     setFading(" opacity-100 ease-in ");
@@ -50,37 +51,60 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
           </a>
         </h1>
 
-        <div
+        <ul
           id={"blogs"}
           className={
-            "group flex-col items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 "
+            "flex flex-col items-stretch justify-between w-full relative max-w-2xl list-none border-gray-200 dark:border-gray-700 mx-auto p-0 pt-8 pb-8 "
           }
         >
           {posts.map((post, i) => (
             <li
               key={post.slug}
+              onMouseEnter={() => setHoveredSlug(post.slug)}
+              onMouseLeave={() => setHoveredSlug(null)}
               className={
-                "group/item flex flex-row justify-items-start items-center mb-4 transition-opacity duration-500" +
+                "group/item flex w-full flex-row justify-items-start items-center mb-4 transition-opacity duration-500" +
                 fading
               }
             >
               <Link href={`/writing/${post.slug}`}>
-                <div className="dark:text-white text-gray-800 dark:group-hover:text-gray-500 dark:group-hover/item:text-gray-100 duration-300 group-hover:text-gray-400 group-hover/item:text-black ">
+                <div
+                  className={
+                    "duration-300 " +
+                    (hoveredSlug === null || hoveredSlug === post.slug
+                      ? "dark:text-white text-gray-800"
+                      : "dark:text-gray-500 text-gray-400")
+                  }
+                >
                   {post.title}
                 </div>
 
-                <span className="dark:text-gray-400 whitespace-nowrap text-gray-700 text-sm dark:group-hover:text-gray-500 dark:group-hover/item:text-gray-300 duration-300 group-hover:text-gray-400 group-hover/item:text-black">
+                <span
+                  className={
+                    "whitespace-nowrap text-sm duration-300 " +
+                    (hoveredSlug === null || hoveredSlug === post.slug
+                      ? "dark:text-gray-400 text-gray-700"
+                      : "dark:text-gray-500 text-gray-400")
+                  }
+                >
                   {post.description}
                 </span>
               </Link>
               <span className=" grow opacity-0 md:opacity-100 w-full border-t dark:border-gray-500 mx-4 mb-4 self-end border-dashed shrink border-gray-400 duration-300"></span>
 
-              <span className="dark:text-gray-400  sm:whitespace-nowrap whitespace-normal text-right text-gray-700 text-sm dark:group-hover:text-gray-500 dark:group-hover/item:text-gray-300 duration-300 group-hover:text-gray-400 group-hover/item:text-black">
+              <span
+                className={
+                  "sm:whitespace-nowrap whitespace-normal text-right text-sm duration-300 " +
+                  (hoveredSlug === null || hoveredSlug === post.slug
+                    ? "dark:text-gray-400 text-gray-700"
+                    : "dark:text-gray-500 text-gray-400")
+                }
+              >
                 {post.date}
               </span>
             </li>
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   );

@@ -25,17 +25,22 @@ const Footer = () => {
 
   return (
     <footer className={"flex flex-col justify-center px-8 " + faded + fading}>
-      <div className="max-w-2xl mx-auto w-full  justify-center h-5 border-b-1px border-gray-400 dark:border-gray-500 text-2xl text-center ">
+      <div
+        className={
+          "max-w-2xl mx-auto w-full justify-center h-5 border-b-1px border-gray-400 dark:border-gray-500 text-2xl text-center transition-opacity delay-1400 duration-1000 " +
+          fading
+        }
+      >
       <span className="dark:text-gray-400  bg-amber-50 dark:bg-black px-5 position: relative -bottom-1.5 transition-colors duration-200 inline-flex items-center gap-2">
-      <Link href="https://cs.uwatering.com/#www.triho.dev?nav=prev"><span className="inline-block rotate-180 relative top-[1px]">➢</span></Link>
-        <Link href='https://cs.uwatering.com/#www.triho.dev' target='_blank'>
+      <Link href="https://cs.uwatering.com/#triho.dev?nav=prev"><span className="inline-block rotate-180 relative top-[1px]">➢</span></Link>
+        <Link href='https://cs.uwatering.com/#triho.dev' target='_blank'>
             <img
                 src={mounted ? `https://cs.uwatering.com/icon.${theme === 'light' ? 'black' : 'white'}.svg` : 'https://cs.uwatering.com/icon.white.svg'}
                 alt='CS Webring'
                 style={{ width: '24px', height: 'auto', opacity: 0.8 }}
             />
         </Link>
-        <Link href="https://cs.uwatering.com/#www.triho.dev?nav=next" className="inline-block  relative right-2">➢</Link>
+        <Link href="https://cs.uwatering.com/#triho.dev?nav=next" className="inline-block  relative right-2">➢</Link>
 
         </span>
  
@@ -61,10 +66,10 @@ const Footer = () => {
             Writing
           </Link>
           <Link
-            href="/pictures"
+            href="/design"
             className="text-gray-500 hover:text-gray-700 transition"
           >
-            Pictures
+            Design
           </Link>
         </div>
         <div className="flex flex-col space-y-4"></div>
