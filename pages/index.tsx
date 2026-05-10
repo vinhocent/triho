@@ -81,7 +81,7 @@ const Home: NextPage = () => {
                 fading
               }
             >
-              <p className="mb-2">I am currently interested in:</p>
+              <p className="mb-2">I am broadly interested in:</p>
               <ul className="list-disc pl-5 space-y-2">
                 <li>the role of voice in the future of computing</li>
                 <li>experimenting w/ my day-to-day ergonomics</li>
